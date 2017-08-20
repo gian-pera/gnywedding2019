@@ -1,7 +1,9 @@
 import { Container } from "inversify";
 import { interfaces, TYPE } from 'inversify-express-utils';
 
-import ContainerTags from "./ContainerTags";sss
+import ContainerTags from "./ContainerTags";
+
+import { IndexController } from "../controller/IndexController";
 
 import  * as logger from 'winston';
 
@@ -14,8 +16,8 @@ logger.info("Initializing application container...");
 /* Binds the API controllers
  */
 container.bind<interfaces.Controller>(TYPE.Controller)
-  .to(ConfigController).inSingletonScope()
-    .whenTargetNamed(ContainerTags.ConfigController);
+  .to(IndexController).inSingletonScope()
+    .whenTargetNamed(ContainerTags.IndexController);
 
 logger.info("Application container initialized.");
 

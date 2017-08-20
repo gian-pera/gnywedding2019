@@ -17,9 +17,9 @@ module.exports = function(grunt) {
           },
           {
             expand: true,
-            cwd: './src/main/views',
+            cwd: './src/main/public',
             src: '**',
-            dest: './build/views'
+            dest: './build/public'
           }
 
         ]

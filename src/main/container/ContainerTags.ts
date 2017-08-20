@@ -1,7 +1,5 @@
 const ContainerTags = {
-    ConfigController: 'ConfigController',
-    ConfigUIController: 'ConfigUIController',
-    RepositoryController: 'RepositoryController'
+    IndexController: 'IndexController'
 };
 
 export default ContainerTags;

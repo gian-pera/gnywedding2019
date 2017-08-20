@@ -7,7 +7,6 @@ import { APIError, NotFoundError } from './utils/Errors';
 
 import * as bodyParser from 'body-parser';
 import * as methodOverride from 'method-override';
-import * as path from 'path';
 import * as logger from 'winston';
 
 import container from './container/Container';
@@ -20,7 +19,7 @@ let server = new InversifyExpressServer(container);
 /* Sets the server's configurations
  */
 server.setConfig((app) => {
-  app.set('views', path.join(__dirname, 'views'));
+  app.set('views', __dirname + '/public/views');
   app.set('view engine', 'pug');
 
   app.use(bodyParser.urlencoded({
