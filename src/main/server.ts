@@ -63,7 +63,7 @@ server.setConfig((app) => {
 
  /* Sets the port to be used
  */
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 /* Builds and starts the server
  */
