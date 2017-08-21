@@ -2,7 +2,10 @@
   "name": "gnywedding2019",
   "version": "1.0.0",
   "description": "Website for Gian & Yssa's Wedding",
-  "main": "server.js",
+  "main": "build/server.js",
+  "engines": {
+    "node": "6.11.2"
+  },
   "private": true,
   "scripts": {
     "postinstall": "grunt",
@@ -22,6 +25,7 @@
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
+    "grunt": "^1.0.1",
     "inversify": "^4.2.0",
     "inversify-express-utils": "^4.0.0",
     "lodash": "^4.17.4",
