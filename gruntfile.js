@@ -17,9 +17,9 @@ module.exports = function(grunt) {
           },
           {
             expand: true,
-            cwd: './src/main/public',
+            cwd: './src/main/views',
             src: '**',
-            dest: './build/public'
+            dest: './build/views'
           }
 
         ]
@@ -33,11 +33,21 @@ module.exports = function(grunt) {
         }],
        tsconfig: true
       }
+    },
+    watch: {
+      scripts: {
+        files: ['./src/main/resources/**/*', './src/main/views/**/*'],
+        tasks: 'copy',
+        options: {
+          interrupt: true
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-ts');
-  grunt.registerTask('default', ['clean', 'copy', 'ts']);
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.registerTask('default', ['clean', 'copy', 'ts', 'watch']);
 };

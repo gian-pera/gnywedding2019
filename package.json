@@ -1,8 +1,8 @@
 {
-  "name": "svn-api",
+  "name": "gnywedding2019",
   "version": "1.0.0",
-  "description": "A RESTful API for managing the configuration and hooks of SVN repositories hosted by the GlobalSCM team.",
-  "main": "index.js",
+  "description": "Website for Gian & Yssa's Wedding",
+  "main": "server.js",
   "private": true,
   "scripts": {
     "compile": "grunt",
@@ -13,16 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://codecloud.web.att.com/projects/ST_GSCM/repos/svn-api"
+    "url": "https://github.com/gian-pera/gnywedding2019"
   },
   "keywords": [
-    "svn",
-    "gscm",
-    "globalscm",
-    "centralscm",
-    "scm"
+    "wedding"
   ],
-  "author": "Pera, Gian (gp0289@att.com)",
+  "author": "gian-pera",
   "license": "UNLICENSED",
   "dependencies": {
     "bluebird": "^3.5.0",
@@ -59,6 +55,7 @@
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-ts": "^6.0.0-beta.16",
     "mocha": "^3.4.2",
     "sinon": "^2.3.6",
