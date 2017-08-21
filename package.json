@@ -5,10 +5,8 @@
   "main": "server.js",
   "private": true,
   "scripts": {
-    "compile": "grunt",
-    "start-dev": "grunt && node ./build/server.js",
-    "start": "pm2 start ./build/server.js",
-    "stop": "pm2 stop ./build/server.js",
+    "postinstall": "grunt",
+    "start": "node ./build/server.js",
     "test": "mocha --reporter spec --require source-map-support/register --compilers ts:ts-node/register --project tsconfig.test.json src/test/**/*.spec.ts"
   },
   "repository": {
