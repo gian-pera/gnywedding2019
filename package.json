@@ -9,7 +9,11 @@
   "private": true,
   "scripts": {
     "postinstall": "grunt",
-    "start": "node ./build/server.js",
+    "start": "pm2 start ./build/server.js -i max --attach",
+    "stop": "pm2 stop ./build/server.js",
+    "deploy": "npm run postinstall && npm start",
+    "reinstall": "npm stop && npm run postinstall",
+    "redeploy": "npm run reinstall && npm start",
     "test": "mocha --reporter spec --require source-map-support/register --compilers ts:ts-node/register --project tsconfig.test.json src/test/**/*.spec.ts"
   },
   "repository": {
@@ -53,6 +57,7 @@
     "mocha": "^3.4.2",
     "moment": "^2.18.1",
     "moment-timezone": "^0.5.13",
+    "pm2": "^2.6.1",
     "pug": "^2.0.0-rc.3",
     "reflect-metadata": "^0.1.10",
     "sinon": "^2.3.6",
