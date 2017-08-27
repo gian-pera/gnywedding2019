@@ -15,7 +15,7 @@ export class IndexController {
   public get(@response() response: express.Response): Promise<void> {
     logger.info('User accessed application.');
     return new Promise<void>((resolve, reject) => {
-      response.render('index0');
+      response.render('index');
       resolve();
     });
   }

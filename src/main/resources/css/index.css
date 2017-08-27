@@ -1,54 +1,83 @@
 body {
-  background-color: #FABEBE;
+  font-family: 'Roboto Slab', serif;
 }
 
-nav ul a,
-nav .brand-logo {
-  color: #444;
+h1, h2, h3 {
+  font-family: 'Tangerine', cursive;
+  font-weight: bold;
 }
 
-p {
-  line-height: 2rem;
+h1 {
+  font-size: 6rem;
 }
 
-.button-collapse {
-  color: #26a69a;
+h2 {
+  font-size: 4.5rem;
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
+h3 {
+  font-size: 3.5rem;
+}
+
+section {
+  position: relative;
+  max-width: 100%;
+  min-height: 50rem;
   height: auto;
-  color: rgba(255,255,255,.9);
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.parallax-container .section {
+footer {
+  position: fixed;
+  bottom: 0;
   width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  z-index: 100;
 }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+img {
+  max-width: 25rem;
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+#header {
+  background-image: url(../static/header.jpg);
+  color: rgba(0, 0, 0, 0.9);
+  height: 100%;
 }
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
+.container {
+  width: 85%;
 }
 
-footer.page-footer {
-  margin: 0;
+.blue {
+  background: rgba(19, 41, 75, 1) !important;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.pink {
+  background: rgba(247, 202, 201, 1) !important;
+  background: -webkit-linear-gradient(rgba(247, 202, 201, 0.9), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0.9)) !important;
+  background: -o-linear-gradient(rgba(247, 202, 201, 0.9), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0.9)) !important;
+  background: -moz-linear-gradient(rgba(247, 202, 201, 0.9), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0.9)) !important;
+  background: linear-gradient(rgba(rgba(247, 202, 201, 0.9), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0.9)) !important;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+    }
 }
