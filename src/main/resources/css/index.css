@@ -1,18 +1,23 @@
+body {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
 h1, h2, h3 {
   font-family: 'Encode Sans Semi Condensed', sans-serif;
   font-weight: bold;
 }
 
 h1 {
-  font-size: 6rem;
-}
-
-h2 {
   font-size: 4.5rem;
 }
 
+h2 {
+  font-size: 4rem;
+}
+
 h3 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 section {
@@ -20,11 +25,6 @@ section {
   max-width: 100%;
   min-height: 50rem;
   height: auto;
-  overflow: hidden;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 footer {
@@ -32,18 +32,17 @@ footer {
   bottom: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.25);
-  overflow: hidden;
   z-index: 100;
 }
 
-img {
-  max-width: 25rem;
-}
-
 #header {
-  background-image: url(../static/header.jpg);
   color: rgba(0, 0, 0, 0.9);
   height: 100%;
+}
+
+img {
+  object-fit: cover;
+  height: 150%;
 }
 
 .container {
@@ -55,25 +54,40 @@ img {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.col.m4.parallax-container {
+    height: 25%;
+    width: 30%;
+}
+
+.col.m6.parallax-container {
+    height: 30%;
+    width: 40%;
+}
+
 .pink {
   background: rgba(247, 202, 201, 1) !important;
   background: -webkit-linear-gradient(rgba(247, 202, 201, 0.9), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0.9)) !important;
   background: -o-linear-gradient(rgba(247, 202, 201, 0.9), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0.9)) !important;
   background: -moz-linear-gradient(rgba(247, 202, 201, 0.9), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0.9)) !important;
-  background: linear-gradient(rgba(rgba(247, 202, 201, 0.9), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0.9)) !important;
+  background: linear-gradient(rgba(247, 202, 201, 0.9), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0.9)) !important;
   color: rgba(0, 0, 0, 0.9);
 }
 
 @media only screen and (max-width: 600px) {
     h1 {
-      font-size: 4rem;
-    }
-
-    h2 {
       font-size: 3rem;
     }
 
-    h3 {
+    h2 {
       font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 1.75rem;
+    }
+
+    .col.s12.parallax-container {
+        height: 25%;
+        width: 85%;
     }
 }

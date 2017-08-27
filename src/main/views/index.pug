@@ -1,7 +1,7 @@
 html(lang = 'en')
   head
-    meta(name = 'og:title', content = 'Gian &amp; Yssa's Wedding')
-    meta(name = 'og:site_name', content = 'Gian &amp; Yssa's Wedding')
+    meta(name = 'og:title', content = 'Gian &amp; Yssa&#039;s Wedding')
+    meta(name = 'og:site_name', content = 'Gian &amp; Yssa&#039;s Wedding')
     meta(name = 'og:url', content = 'https://gnywedding2019.herokuapp.com')
     meta(name = 'og:image', content = 'https://gnywedding2019.herokuapp.com/static/header.jpg')
     meta(http-equiv = 'Content-Type', content = 'text/html; charset=UTF-8')
@@ -15,22 +15,25 @@ html(lang = 'en')
     link(type = 'text/css', rel = 'stylesheet', href = 'css/index.css')
       
   body
-    section#header.valign-wrapper
-      .container.center
+    section#header.parallax-container.valign-wrapper
+      .container.section.center
         h3 You are cordially invited to
         h1 Gian &amp; Yssa's Wedding
+      .parallax
+        img(src = 'static/header.jpg', alt = 'Header Image')
         
-    section#story.pink.valign-wrapper
+    section#story.valign-wrapper.pink
       .container.section.no-pad-bot
         .row
           .col.s12.m6
             .container
               h1.center Their Story
               p.flow-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum tellus tincidunt erat molestie eleifend. Ut rutrum justo eu posuere elementum. Maecenas tempor viverra faucibus.
-          .col.s12.m6
-            img.responsive-img.z-depth-5(src = 'static/mithi2.jpg', alt = 'Banner Image')
+          .col.s12.m6.offset-s1.parallax-container.z-depth-5
+            .parallax
+              img(src = 'static/mithi2.jpg', alt = 'Story Image')
             
-    section#celebrant.pink.valign-wrapper
+    section#celebrant.valign-wrapper.pink
       .container.section.no-pad-bot
         .row
           .col.s12.m6
@@ -40,18 +43,21 @@ html(lang = 'en')
             h1.center The Bride
             p.flow-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum tellus tincidunt erat molestie eleifend. Ut rutrum justo eu posuere elementum. Maecenas tempor viverra faucibus.
             
-    section#details.pink.valign-wrapper
-      .container.section.center.no-pad-bot
+    section#details.valign-wrapper.pink
+      .container.section.center
         h1.center Wedding Details
         .row
-          .col.s12.m4
-            img.responsive-img.z-depth-5(src = 'static/mithi1.jpg', alt = 'Banner Image')
-          .col.s6.m4
-            h2 Venue
-            p.flow-text Dream Islet, Mithi Resort &amp; Spa, Dauis, Bohol
-          .col.s6.m4
-            h2 Date &amp; Time
-            p.flow-text January 11, 2019, 4:00 PM
+          .col.s12.offset-s1.m6.parallax-container.z-depth-5
+            .container.center.parallax
+              img(src = 'static/mithi1.jpg', alt = 'Venue Image')
+          .col.s12.m6
+            .row
+              .col.s12
+                h3 Venue
+                p.flow-text Dream Islet, Mithi Resort &amp; Spa, Dauis, Bohol
+              .col.s12
+                h3 Date &amp; Time
+                p.flow-text January 11, 2019, 4:00 PM
             
     footer
       .section.center
