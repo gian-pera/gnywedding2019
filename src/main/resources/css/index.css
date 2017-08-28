@@ -116,30 +116,30 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    h1 {
-      font-size: 2rem;
-    }
+  h1 {
+    font-size: 2rem;
+  }
 
-    h2 {
-      font-size: 1.5rem;
-    }
+  h2 {
+    font-size: 1.5rem;
+  }
 
-    h3 {
-      font-size: 1.25rem;
-    }
+  h3 {
+    font-size: 1.25rem;
+  }
 
-    section .section {
-      padding-top: 1rem;
-    }
+  section .section {
+    padding-top: 1rem;
+  }
 
-    .carousel {
-      min-height: 400px;
-      max-height: 400px;
-    }
+  .carousel {
+    min-height: 400px;
+    max-height: 400px;
+  }
 
-    .carousel .carousel-item img {
-      height: 400px;
-    }
+  .carousel .carousel-item img {
+    height: 400px;
+  }
 }
 
 @media only screen and (max-width: 360px) {

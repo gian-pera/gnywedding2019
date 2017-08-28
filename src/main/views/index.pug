@@ -40,7 +40,7 @@ html(lang = 'en')
             hr 
                     
     section#gallery
-      .container
+      .container.hide-on-small-only
         .carousel.carousel-slider
           a.carousel-item
             img(src='static/cp1.jpg')
@@ -54,6 +54,20 @@ html(lang = 'en')
             img(src='static/cp5.jpg')
           a.carousel-item
             img(src='static/cp6.jpg')
+      .container.show-on-small
+        .carousel.carousel-slider
+          a.carousel-item
+            img(src='static/mcp1.jpg')
+          a.carousel-item
+            img(src='static/mcp2.jpg')
+          a.carousel-item
+            img(src='static/mcp3.jpg')
+          a.carousel-item
+            img(src='static/mcp4.jpg')
+          a.carousel-item
+            img(src='static/mcp5.jpg')
+          a.carousel-item
+            img(src='static/mcp6.jpg')
             
     section#registry.center
       .section
