@@ -9,60 +9,80 @@ html(lang = 'en')
     
     title Gian &amp; Yssa's Wedding
     
-    link(type = 'text/css', rel = 'stylesheet', href='https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed')
-    link(type = 'text/css', rel = 'stylesheet', href = 'css/font-awesome.min.css')
+    link(type = 'text/css', rel = 'stylesheet', href='https://fonts.googleapis.com/css?family=Lato|Raleway')
+    link(type = 'text/css', rel = 'stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
     link(type = 'text/css', rel = 'stylesheet', href = 'css/materialize.min.css')
     link(type = 'text/css', rel = 'stylesheet', href = 'css/index.css')
       
   body
-    section#header.parallax-container.valign-wrapper
+    section#header
       .container.section.center
-        h3 You are cordially invited to
-        h1 Gian &amp; Yssa's Wedding
-      .parallax
-        img(src = 'static/header.jpg', alt = 'Header Image')
+        h1 Gian &amp; Yssa
+        h3 are getting married
+      .section
+        .row
+          .col.s4.offset-s1
+            p.flow-text.center Mithi Resort &amp; Spa
+          .col.s4.offset-s2
+            p.flow-text.center January 11, 2019
         
-    section#story.valign-wrapper.pink
-      .container.section.no-pad-bot
+    section#story
+      .section
         .row
-          .col.s12.m6
-            .container
-              h1.center Their Story
-              p.flow-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum tellus tincidunt erat molestie eleifend. Ut rutrum justo eu posuere elementum. Maecenas tempor viverra faucibus.
-          .col.s12.m6.offset-s1.parallax-container.z-depth-5
-            .parallax
-              img(src = 'static/mithi2.jpg', alt = 'Story Image')
-            
-    section#celebrant.valign-wrapper.pink
-      .container.section.no-pad-bot
+          .col.s2.offset-s5
+            hr 
         .row
-          .col.s12.m6
-            h1.center The Groom
-            p.flow-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum tellus tincidunt erat molestie eleifend. Ut rutrum justo eu posuere elementum. Maecenas tempor viverra faucibus.
-          .col.s12.m6
-            h1.center The Bride
-            p.flow-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum tellus tincidunt erat molestie eleifend. Ut rutrum justo eu posuere elementum. Maecenas tempor viverra faucibus.
-            
-    section#details.valign-wrapper.pink
-      .container.section.center
-        h1.center Wedding Details
+          .col.s10.offset-s1
+            p.center Established through connections, forged by friendship, and strengthened with trials. That is how our story is summed up. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet semper magna et dapibus. Suspendisse posuere posuere elit, quis pharetra quam bibendum id. Sed eros tortor, vestibulum vel blandit quis, eleifend at tellus. Nam viverra justo sit amet dolor finibus, non egestas dolor porttitor.
         .row
-          .col.s12.offset-s1.m6.parallax-container.z-depth-5
-            .container.center.parallax
-              img(src = 'static/mithi1.jpg', alt = 'Venue Image')
-          .col.s12.m6
-            .row
-              .col.s12
-                h3 Venue
-                p.flow-text Dream Islet, Mithi Resort &amp; Spa, Dauis, Bohol
-              .col.s12
-                h3 Date &amp; Time
-                p.flow-text January 11, 2019, 4:00 PM
+          .col.s2.offset-s5
+            hr 
+                    
+    section#gallery
+      .container
+        .carousel.carousel-slider
+          a.carousel-item
+            img(src='static/couple1.jpg')
+          a.carousel-item
+            img(src='static/couple2.jpg')
+          a.carousel-item
+            img(src='static/couple3.jpg')
+          a.carousel-item
+            img(src='static/couple4.jpg')
+          a.carousel-item
+            img(src='static/couple5.jpg')
+          a.carousel-item
+            img(src='static/couple6.jpg')
             
+    section#registry.center
+      .section
+        .row
+          .col.s2.offset-s5
+            hr
+        h1.center REGISTRY
+        .row
+          .col.s10.offset-s1
+            p.center We would prefer your presence, not your presents. But if you would like to give us gifts, then we'd highly appreciate monetary contributions to help us prepare for the future.  
+        .row
+          .col.s10.offset-s1
+            p.center You may come in your formal beach attire.
+        .row
+          .col.s10.offset-s1
+              p.center
+                i.large.material-icons.font-blue flight
+                i.large.material-icons.font-pink wb_sunny
+                i.large.material-icons.font-blue map
+                i.large.material-icons.font-pink wc
+
+    section#footer
+          
     footer
       .section.center
-        a.btn-large.waves-effect.waves-light.blue RSVP Now
+        a.btn-large.waves-effect.waves-light.blue.modal-trigger(href='#rsvp')
+          b RSVP Now
           
     script(src = 'js/jquery.min.js')
     script(src = 'js/materialize.js')
     script(src = 'js/index.js')
+    
+    include rsvp.pug

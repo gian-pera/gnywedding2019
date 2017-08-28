@@ -1,0 +1,3 @@
+$(function() {
+  $('#rsvp').modal();
+});

@@ -1,0 +1,31 @@
+#rsvp.modal
+  .modal-content
+    h3 Enter your Details
+    form.section
+      .row
+        .input-field.col.s12.m4
+          input#first_name.validate(placeholder='John', type = 'text')
+          label First Name
+        .input-field.col.s12.m4
+          input#middle_name.validate(placeholder='', type = 'text')
+          label Middle Name
+        .input-field.col.s12.m4
+          input#last_name.validate(placeholder='Doe', type = 'text')
+          label Last Name
+      .row
+        .input-field.col.s12.m6
+          input#mobile.validate(placeholder='09173181362', type = 'text')
+          label Mobile Number
+        .input-field.col.s12.m6
+          input#email.validate(placeholder='john.doe@gmail.com', type = 'email')
+          label Email Address
+      .row
+        .input-field.col.s12
+          textarea#message.materialize-textarea
+          label Message to the Couple
+    .section
+      h3.center Thank you and see you in our wedding!
+  .modal-footer
+    a.modal-action.modal-close.waves-effect.waves-light.btn-flat.blue(href='#!') Cancel
+    a.modal-action.waves-effect.waves-light.btn-flat.blue(href='#submit') Submit
+script(src = 'js/rsvp.js')

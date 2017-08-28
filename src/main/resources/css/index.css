@@ -1,29 +1,38 @@
 body {
+  font-weight: 300;
   overflow: hidden;
   overflow-y: scroll;
+  background-color: rgba(247, 233, 232, 0.9);
 }
 
 h1, h2, h3 {
-  font-family: 'Encode Sans Semi Condensed', sans-serif;
-  font-weight: bold;
+  font-weight: 100;
+  font-style: italic;
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-family: 'lato', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 1rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+}
+
+hr {
+  border-color: rgba(247, 202, 201, 0.5);
 }
 
 section {
   position: relative;
   max-width: 100%;
-  min-height: 50rem;
   height: auto;
 }
 
@@ -35,18 +44,9 @@ footer {
   z-index: 100;
 }
 
-#header {
-  color: rgba(0, 0, 0, 0.9);
-  height: 100%;
-}
-
-img {
-  object-fit: cover;
-  height: 150%;
-}
-
-.container {
-  width: 85%;
+.section {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .blue {
@@ -54,40 +54,120 @@ img {
   color: rgba(255, 255, 255, 0.9);
 }
 
-.col.m4.parallax-container {
-    height: 25%;
-    width: 30%;
+.font-blue {
+  color: rgba(19, 41, 75, 0.9);
 }
 
-.col.m6.parallax-container {
-    height: 30%;
-    width: 40%;
+.font-pink {
+  color: rgba(247, 202, 201, 1);
 }
 
-.pink {
-  background: rgba(247, 202, 201, 1) !important;
-  background: -webkit-linear-gradient(rgba(247, 202, 201, 0.9), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0.9)) !important;
-  background: -o-linear-gradient(rgba(247, 202, 201, 0.9), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0.9)) !important;
-  background: -moz-linear-gradient(rgba(247, 202, 201, 0.9), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0.9)) !important;
-  background: linear-gradient(rgba(247, 202, 201, 0.9), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0), rgba(247, 202, 201, 0.9)) !important;
-  color: rgba(0, 0, 0, 0.9);
+.carousel {
+  min-height: 750px;
+  max-height: 750px;
+}
+
+.carousel .indicators {
+  position: relative;
+}
+
+.carousel .carousel-item img {
+  object-fit: cover;
+  height: 750px;
+  width: 100%;
+}
+
+.modal {
+  background-color: rgba(247, 233, 232, 1);
+}
+
+.modal .modal-footer {
+  background-color: rgba(247, 233, 232, 1);
+}
+
+.modal .modal-footer > a {
+  margin-right: 10px !important;
+}
+
+#header {
+  background-image: url('../static/header.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.9);
+  height: 100%;
+  letter-spacing: 1rem
+}
+
+#header .container {
+  padding-top: 5rem;
+}
+
+#header p {
+  letter-spacing: .25rem;
+}
+
+#footer {
+  min-height: 5rem;
 }
 
 @media only screen and (max-width: 600px) {
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     h2 {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
     }
 
     h3 {
-      font-size: 1.75rem;
+      font-size: 1.25rem;
     }
 
-    .col.s12.parallax-container {
-        height: 25%;
-        width: 85%;
+    section .section {
+      padding-top: 1rem;
     }
+
+    .carousel {
+      min-height: 400px;
+      max-height: 400px;
+    }
+
+    .carousel .carousel-item img {
+      height: 400px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 1.4rem;
+    letter-spacing: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  #header {
+    letter-spacing: 0.5rem;
+  }
+
+  #header .container {
+    padding-top: 3rem;
+  }
+
+  .carousel {
+    min-height: 200px;
+    max-height: 200px;
+  }
+
+  .carousel .indicators .indicator-item {
+    height: 6px;
+    width: 6px;
+  }
 }
