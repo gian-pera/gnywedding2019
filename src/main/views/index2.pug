@@ -14,16 +14,94 @@ html(lang = 'en')
     link(type = 'text/css', rel = 'stylesheet', href = 'css/materialize.min.css')
     link(type = 'text/css', rel = 'stylesheet', href = 'css/index2.css')
       
-  body    
-    #background
-        img.hide(src='static/og.jpg')
-    #main
-      #header.section
-        .container.center
+  body
+    img.hide(src='static/og.jpg')
+    section#header
+      .overlay
+        .container.section.center
           h1 GIAN &amp; YSSA
           h3 are getting married
-          p.flow-text.center Mithi Resort &amp; Spa
-          p.flow-text.center January 11, 2019
+        
+    section#story
+      .section
+        .row
+          .col.s2.offset-s5
+            hr 
+        .row
+          .col.s12.m6.responsive-text
+            p We'll be celebrating our wedding at
+              b Mithi Resort &amp; Spa
+            | in Dauis, Bohol. 
+          .col.s12.m6
+            #location-map
+        .row
+          .col.s2.offset-s5
+            hr 
+                    
+    section#gallery
+      .container.hide-on-small-only
+        .carousel.carousel-slider
+          a.carousel-item
+            img(src='static/cp1.jpg')
+          a.carousel-item
+            img(src='static/cp2.jpg')
+          a.carousel-item
+            img(src='static/cp3.jpg')
+          a.carousel-item
+            img(src='static/cp4.jpg')
+          a.carousel-item
+            img(src='static/cp5.jpg')
+          a.carousel-item
+            img(src='static/cp6.jpg')
+      .container.hide-on-med-and-up
+        .carousel.carousel-slider
+          a.carousel-item
+            img(src='static/mcp1.jpg')
+          a.carousel-item
+            img(src='static/mcp2.jpg')
+          a.carousel-item
+            img(src='static/mcp3.jpg')
+          a.carousel-item
+            img(src='static/mcp4.jpg')
+          a.carousel-item
+            img(src='static/mcp5.jpg')
+          a.carousel-item
+            img(src='static/mcp6.jpg')
+            
+    section#registry.center
+      .section
+        .row
+          .col.s2.offset-s5
+            hr
+        h1.center REGISTRY
+        .row
+          .col.s10.offset-s1
+            p.center We would prefer your presence, not your presents. But if you would like to give us gifts, then we'd highly appreciate monetary contributions to help us prepare for the future.  
+        .row
+          .col.s10.offset-s1
+            p.center You may come in your formal beach attire.
+        .row
+          .col.s10.offset-s1
+              p.center.hide-on-small-only
+                i.large.material-icons.font-blue flight
+                i.large.material-icons.font-pink wb_sunny
+                i.large.material-icons.font-blue map
+                i.large.material-icons.font-pink wc
+              p.center.hide-on-med-and-up
+                i.large.material-icons.font-blue flight
+                i.large.material-icons.font-pink wb_sunny
+                i.large.material-icons.font-pink map
+                i.large.material-icons.font-blue wc
+    section#footer
+          
+    footer
+      .section.center
+        a.btn-large.waves-effect.waves-light.blue.modal-trigger(href='#rsvp')
+          b RSVP Now
           
     script(src = 'js/jquery.min.js')
     script(src = 'js/materialize.js')
+    script(src = 'js/index.js')
+    script(async, defer, src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBI73jgJhdGr_mbFbP89ZQl452tE0nMNzg&callback=initVenueMap')
+    
+    include rsvp.pug

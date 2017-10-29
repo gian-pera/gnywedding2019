@@ -16,4 +16,16 @@ $(function() {
   }, function(){
     carousel_interval = setInterval(transition_carousel, 5000);
   });
+
+  function initVenueMap() {
+    var coordinates = {lat:9.62536, lng: 123.8010313};
+    var map = new google.maps.Map($('#location-map'), {
+      zoom: 4,
+      center: coordinates
+    });
+    var marker = new google.maps.Marker({
+      position: coordinates,
+      map: map
+    });
+  }
 });
