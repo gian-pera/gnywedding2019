@@ -1,14 +1,17 @@
-$(function() {
-  var venueCoords = [9.62536, 123.8010313];
+$.gmap3({
+  key: 'AIzaSyDqPw4fG0ksLZNU26TvubY6u4B-5dKUJio'
+});
 
-  $('#location-map').gmap3({
+$(function() {
+
+  var venueCoords = [9.62536, 123.8010313];
+  $('.map').gmap3({
     center: venueCoords,
-    zoom: 4,
-    mapTypeId: gooogle.maps.mapTypeId.ROADMAP
+    zoom: 14,
   }).marker({
     position: venueCoords
   });
-
+/*
   $('.carousel').carousel({
     indicators: true,
     dist: -50,
@@ -26,4 +29,5 @@ $(function() {
   }, function(){
     carousel_interval = setInterval(transition_carousel, 5000);
   });
+*/
 });

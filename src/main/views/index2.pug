@@ -15,6 +15,12 @@ html(lang = 'en')
     link(type = 'text/css', rel = 'stylesheet', href = 'css/materialize.min.css')
     link(type = 'text/css', rel = 'stylesheet', href = 'css/index2.css')
       
+    script(type = 'text/javascript', src = 'js/jquery.min.js')
+    script(type = 'text/javascript', src = 'js/materialize.js')
+    script(type = 'text/javascript', src = 'https://maps.googleapis.com/maps/api/js?sensor=false')
+    script(type = 'text/javascript', src = 'js/gmap3.min.js')
+    script(type = 'text/javascript', src = 'js/index.js')
+    
   body
     img.hide(src='static/og.jpg')
     section#header
@@ -24,7 +30,7 @@ html(lang = 'en')
           h3 are getting married
         
     section#venue
-      .container
+      .section
         .row
           .col.s2.offset-s5
             hr 
@@ -32,48 +38,15 @@ html(lang = 'en')
           .col.s12.m6.flow-text
             p We'll be celebrating our wedding at 
               b Mithi Resort &amp; Spa
-              | in Dauis, Bohol. 
+              | &nbsp;in Dauis, Bohol. 
           .col.s12.m6
-            #location-map
-        .row
-          .col.s2.offset-s5
-            hr 
-                    
-    section#gallery
-      .container.hide-on-small-only
-        .carousel.carousel-slider
-          a.carousel-item
-            img(src='static/cp1.jpg')
-          a.carousel-item
-            img(src='static/cp2.jpg')
-          a.carousel-item
-            img(src='static/cp3.jpg')
-          a.carousel-item
-            img(src='static/cp4.jpg')
-          a.carousel-item
-            img(src='static/cp5.jpg')
-          a.carousel-item
-            img(src='static/cp6.jpg')
-      .container.hide-on-med-and-up
-        .carousel.carousel-slider
-          a.carousel-item
-            img(src='static/mcp1.jpg')
-          a.carousel-item
-            img(src='static/mcp2.jpg')
-          a.carousel-item
-            img(src='static/mcp3.jpg')
-          a.carousel-item
-            img(src='static/mcp4.jpg')
-          a.carousel-item
-            img(src='static/mcp5.jpg')
-          a.carousel-item
-            img(src='static/mcp6.jpg')
-            
-    section#registry.center
-      .section
+            .map
         .row
           .col.s2.offset-s5
             hr
+            
+    section#registry.center
+      .section
         h1.center REGISTRY
         .row
           .col.s10.offset-s1
@@ -99,10 +72,5 @@ html(lang = 'en')
       .section.center
         a.btn-large.waves-effect.waves-light.blue.modal-trigger(href='#rsvp')
           b RSVP Now
-          
-    script(src = 'js/jquery.min.js')
-    script(src = 'js/materialize.js')
-    script(src = 'js/gmap3.min.js')
-    script(src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDqPw4fG0ksLZNU26TvubY6u4B-5dKUJio')
     
     include rsvp.pug
