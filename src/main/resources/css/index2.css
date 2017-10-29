@@ -36,6 +36,13 @@ section {
   height: auto;
 }
 
+gm-map {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #FABEBE;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -109,11 +116,8 @@ footer {
   letter-spacing: 1rem;
 }
 
-#location-map {
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-color: #FABEBE;
+#venue {
+  height: 50%;
 }
 
 #footer {
