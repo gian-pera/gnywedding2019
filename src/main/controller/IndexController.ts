@@ -9,7 +9,7 @@ import * as logger from 'winston';
 export class IndexController {
 
   /**
-   * Displays the config of the API through the UI.
+   * Displays the main page.
    */
   @httpGet('/')
   public get(@response() response: express.Response): Promise<void> {
