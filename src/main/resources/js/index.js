@@ -2,6 +2,7 @@ $(function() {
   var venueCoords = [9.62536, 123.8010313];
 
   $('#location-map').gmap3({
+    center: venueCoords,
     zoom: 4,
     mapTypeId: gooogle.maps.mapTypeId.ROADMAP
   }).marker({
