@@ -109,6 +109,12 @@ footer {
   letter-spacing: 1rem;
 }
 
+#location-map {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
 #footer {
   min-height: 5rem;
 }

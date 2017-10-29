@@ -28,6 +28,7 @@ server.setConfig((app) => {
   app.use('/', express.static('node_modules/font-awesome'));
   app.use('/', express.static('node_modules/materialize-css/dist'));
   app.use('/js', express.static('node_modules/jquery/dist'));
+  app.use('/js', express.static('node_modules/gmap3/dist'));
 
   app.use(bodyParser.urlencoded({
     extended: true

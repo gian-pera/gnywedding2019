@@ -1,4 +1,13 @@
 $(function() {
+  var venueCoords = [9.62536, 123.8010313];
+
+  $('#location-map').gmap3({
+    zoom: 4,
+    mapTypeId: gooogle.maps.mapTypeId.ROADMAP
+  }).marker({
+    position: venueCoords
+  });
+
   $('.carousel').carousel({
     indicators: true,
     dist: -50,
@@ -16,16 +25,4 @@ $(function() {
   }, function(){
     carousel_interval = setInterval(transition_carousel, 5000);
   });
-
-  function initVenueMap() {
-    var coordinates = {lat:9.62536, lng: 123.8010313};
-    var map = new google.maps.Map($('#location-map'), {
-      zoom: 4,
-      center: coordinates
-    });
-    var marker = new google.maps.Marker({
-      position: coordinates,
-      map: map
-    });
-  }
 });

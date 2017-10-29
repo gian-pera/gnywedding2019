@@ -23,20 +23,19 @@ html(lang = 'en')
           h3 are getting married
         
     section#story
-      .section
-        .row
-          .col.s2.offset-s5
-            hr 
-        .row
-          .col.s12.m6.responsive-text
-            p We'll be celebrating our wedding at
-              b Mithi Resort &amp; Spa
-            | in Dauis, Bohol. 
-          .col.s12.m6
-            #location-map
-        .row
-          .col.s2.offset-s5
-            hr 
+      .row
+        .col.s2.offset-s5
+          hr 
+      .row
+        .col.s12.m6.responsive-text
+          p We'll be celebrating our wedding at
+            b Mithi Resort &amp; Spa
+          | in Dauis, Bohol. 
+        .col.s12.m6
+          #location-map
+      .row
+        .col.s2.offset-s5
+          hr 
                     
     section#gallery
       .container.hide-on-small-only
@@ -101,7 +100,7 @@ html(lang = 'en')
           
     script(src = 'js/jquery.min.js')
     script(src = 'js/materialize.js')
-    script(src = 'js/index.js')
-    script(async, defer, src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBI73jgJhdGr_mbFbP89ZQl452tE0nMNzg&callback=initVenueMap')
+    script(src = 'js/gmap3.min.js')
+    script(src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBI73jgJhdGr_mbFbP89ZQl452tE0nMNzg')
     
     include rsvp.pug
