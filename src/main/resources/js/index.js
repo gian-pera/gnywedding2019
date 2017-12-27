@@ -1,17 +1,4 @@
-$.gmap3({
-  key: 'AIzaSyDqPw4fG0ksLZNU26TvubY6u4B-5dKUJio'
-});
-
 $(function() {
-
-  var venueCoords = [9.62536, 123.8010313];
-  $('.map').gmap3({
-    center: venueCoords,
-    zoom: 14
-  }).marker({
-    url: 'https://goo.gl/maps/j8rme19iR3t',
-    position: venueCoords
-  });
 /*
   $('.carousel').carousel({
     indicators: true,

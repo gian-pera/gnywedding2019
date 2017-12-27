@@ -6,19 +6,19 @@ html(lang = 'en')
     meta(name = 'og:image', content = 'https://gnywedding2019.herokuapp.com/static/og.jpg')
     meta(http-equiv = 'Content-Type', content = 'text/html; charset=UTF-8')
     meta(name = 'viewport', content = 'width=device-width, initial-scale=1')
-    
+
     title Gian &amp; Yssa's Wedding
-    
+
     link(type = 'text/css', rel = 'stylesheet', href='https://fonts.googleapis.com/css?family=Lato|Raleway')
     link(type = 'text/css', rel = 'stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
     link(type = 'text/css', rel = 'stylesheet', href = 'css/materialize.min.css')
     link(type = 'text/css', rel = 'stylesheet', href = 'css/index.css')
-      
+
     script(type = 'text/javascript', src = 'js/jquery.min.js')
     script(type = 'text/javascript', src = 'js/materialize.js')
     script(type = 'text/javascript', src = 'js/index.js')
     script(type = 'text/javascript', src = 'js/rsvp.js')
-    
+
   body
     img.hide(src='static/og.jpg')
     section#header
@@ -26,7 +26,7 @@ html(lang = 'en')
         .container.section.center
           h1 GIAN &amp; YSSA
           h3 are getting married
-        
+
     section#quote
       .section
         .row
@@ -35,20 +35,7 @@ html(lang = 'en')
         .row
           .col.s2.offset-s5
             hr
-        
-    section#venue
-      .section
-        .row
-          .col.s12.m6
-            p.center We'll be celebrating our wedding at 
-              b Mithi Resort &amp; Spa
-              | &nbsp;in Dauis, Bohol. 
-          .col.s12.m6
-            .map
-        .row
-          .col.s2.offset-s5
-            hr
-            
+
     section#registry.center
       .section
         .row
@@ -56,7 +43,7 @@ html(lang = 'en')
             h2.center REGISTRY
         .row
           .col.s10.offset-s1
-            p.center We would prefer your presence, not your presents. But if you would like to give us gifts, then we'd highly appreciate monetary contributions to help us prepare for the future.  
+            p.center We would prefer your presence, not your presents. But if you would like to give us gifts, then we'd highly appreciate monetary contributions to help us prepare for the future.
         .row
           .col.s10.offset-s1
             p.center You may come in your formal beach attire.
@@ -73,10 +60,10 @@ html(lang = 'en')
               i.large.material-icons.font-pink map
               i.large.material-icons.font-blue wc
     section#footer
-          
+
     footer
       .section.center
         a.btn-large.waves-effect.waves-light.blue.modal-trigger(href='#rsvp')
           b RSVP Now
-    
+
     include rsvp.pug
