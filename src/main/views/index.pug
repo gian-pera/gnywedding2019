@@ -12,7 +12,6 @@ html(lang = 'en')
     link(type = 'text/css', rel = 'stylesheet', href='https://fonts.googleapis.com/css?family=Lato|Raleway')
     link(type = 'text/css', rel = 'stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
     link(type = 'text/css', rel = 'stylesheet', href = 'css/materialize.min.css')
-    link(type = 'text/css', rel = 'stylesheet', href = 'css/font-awesome.min.css')
     link(type = 'text/css', rel = 'stylesheet', href = 'css/index.css')
 
     script(type = 'text/javascript', src = 'js/jquery.min.js')
@@ -23,51 +22,60 @@ html(lang = 'en')
   body
     img.hide(src='static/og.jpg')
 
-    .loa
+    #preloader
+      .preloader-wrapper.big.active
+        .spinner-layer.spinner-blue-only
+          .circle-clipper.left
+            .circle
+          .gap-patch
+            .circle
+          .circle-clipper.right
+            .circle
 
-    section#header
-      .overlay
-        .container.section.center
-          h1 GIAN &amp; YSSA
-          h3 are getting married
+    #main.hide
+      section#header
+        .overlay
+          .container.section.center
+            h1 GIAN &amp; YSSA
+            h3 are getting married
 
-    section#quote
-      .section
-        .row
-          .col.s12
-            h2.center Isa kang parrot
-        .row
-          .col.s2.offset-s5
-            hr
+      section#quote
+        .section
+          .row
+            .col.s12
+              h2.center Isa kang parrot
+          .row
+            .col.s2.offset-s5
+              hr
 
-    section#registry.center
-      .section
-        .row
-          .col.s12
-            h2.center REGISTRY
-        .row
-          .col.s10.offset-s1
-            p.center We would prefer your presence, not your presents. But if you would like to give us gifts, then we'd highly appreciate monetary contributions to help us prepare for the future.
-        .row
-          .col.s10.offset-s1
-            p.center You may come in your formal beach attire.
-        .row
-          .col.s10.offset-s1.center.hide-on-small-only
-              i.large.material-icons.font-blue flight
-              i.large.material-icons.font-pink wb_sunny
-              i.large.material-icons.font-blue map
-              i.large.material-icons.font-pink wc
-          .col.s10.offset-s1.center.hide-on-med-and-up
-              i.large.material-icons.font-blue flight
-              i.large.material-icons.font-pink wb_sunny
-          .col.s10.offset-s1.center.hide-on-med-and-up
-              i.large.material-icons.font-pink map
-              i.large.material-icons.font-blue wc
-    section#footer
+      section#registry.center
+        .section
+          .row
+            .col.s12
+              h2.center REGISTRY
+          .row
+            .col.s10.offset-s1
+              p.center We would prefer your presence, not your presents. But if you would like to give us gifts, then we'd highly appreciate monetary contributions to help us prepare for the future.
+          .row
+            .col.s10.offset-s1
+              p.center You may come in your formal beach attire.
+          .row
+            .col.s10.offset-s1.center.hide-on-small-only
+                i.large.material-icons.font-blue flight
+                i.large.material-icons.font-pink wb_sunny
+                i.large.material-icons.font-blue map
+                i.large.material-icons.font-pink wc
+            .col.s10.offset-s1.center.hide-on-med-and-up
+                i.large.material-icons.font-blue flight
+                i.large.material-icons.font-pink wb_sunny
+            .col.s10.offset-s1.center.hide-on-med-and-up
+                i.large.material-icons.font-pink map
+                i.large.material-icons.font-blue wc
+      section#footer
 
-    footer
-      .section.center
-        a.btn-large.waves-effect.waves-light.blue.modal-trigger(href='#rsvp')
-          b RSVP Now
+      footer
+        .section.center
+          a.btn-large.waves-effect.waves-light.blue.modal-trigger(href='#rsvp')
+            b RSVP Now
 
-    include rsvp.pug
+      include rsvp.pug

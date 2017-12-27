@@ -102,6 +102,17 @@ footer {
   background-color: rgba(0, 0, 0, .5);
 }
 
+#preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 #header {
   background-image: url('../static/header.jpg');
   background-attachment: fixed;
