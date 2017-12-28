@@ -3,7 +3,8 @@ $(function() {
 
 
   $('#preloader').delay(2000).fadeOut('slow');
-  $('.preloader-wrapper').delay(2000).fadeout('slow');
+  //$('.preloader-wrapper').delay(2000).fadeout('slow');
+  $('#main').delay(2000).fadein('slow');
   $('footer').delay(2000).fadein('slow');
 
 /*
