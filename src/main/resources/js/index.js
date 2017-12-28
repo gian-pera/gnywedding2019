@@ -2,6 +2,7 @@ $(function() {
 
   $(window).on('load', function () {
     $('#preloader').delay(2000).fadeOut('slow', function() {
+      $('body').css('overflow-y', 'scroll');
       $(this).remove();
     });
   });
