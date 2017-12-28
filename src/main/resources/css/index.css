@@ -105,7 +105,7 @@ footer {
   bottom: 0;
   right: 0;
   z-index: 100;
-  background-color: rgba(247, 202, 201, 0.9);
+  background-color: rgba(247, 202, 201, 1);
 }
 
 #header {

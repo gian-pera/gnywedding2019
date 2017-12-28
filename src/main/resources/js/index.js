@@ -3,10 +3,8 @@ $(function() {
 
 
   $('#preloader').delay(2000).fadeOut('slow');
-
-  $('.preloader-wrapper').delay(2000).fadeout('slow', function() {
-    $('#main').removeClass('hide');
-  });
+  $('.preloader-wrapper').delay(2000).fadeout('slow');
+  $('footer').delay(2000).fadein('slow');
 
 /*
   $('.carousel').carousel({
