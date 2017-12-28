@@ -1,5 +1,4 @@
-body:before {
-  content: url('../static/header.jpg');
+body {
   font-weight: 300;
   overflow: hidden;
   overflow-y: scroll;
