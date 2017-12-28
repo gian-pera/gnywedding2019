@@ -1,4 +1,9 @@
 $(function() {
+
+  $('#preloader').delay(2000).fadeOut('slow', function() {
+    $('#main').removeClass('hide');
+  });
+
 /*
   $('.carousel').carousel({
     indicators: true,
