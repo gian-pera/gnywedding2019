@@ -49,13 +49,6 @@ footer {
   padding-right: 20px;
 }
 
-.map {
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-color: #FABEBE;
-}
-
 .blue {
   background: rgba(19, 41, 75, 1) !important;
   color: rgba(255, 255, 255, 0.9);
@@ -66,7 +59,7 @@ footer {
 }
 
 .font-pink {
-  color: rgba(247, 202, 201, 1);
+  color: rgba(247, 202, 201, 0.9);
 }
 
 .carousel {
@@ -111,6 +104,7 @@ footer {
   left: 0;
   bottom: 0;
   right: 0;
+  background-color: rgba(247, 202, 201, 0.9);
 }
 
 #header {

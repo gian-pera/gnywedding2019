@@ -1,6 +1,10 @@
 $(function() {
 
-  $('#preloader').delay(2000).fadeOut('slow', function() {
+
+
+  $('#preloader').delay(2000).fadeOut('slow');
+
+  $('.preloader-wrapper').delay(2000).fadeout('slow', function() {
     $('#main').removeClass('hide');
   });
 
