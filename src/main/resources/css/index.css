@@ -1,5 +1,8 @@
 body {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
   font-weight: 300;
+  font-size: 1.25rem;
   overflow: hidden;
   overflow-y: scroll;
   background-color: rgba(247, 233, 232, 0.9);
@@ -7,7 +10,6 @@ body {
 
 h1, h2, h3 {
   font-weight: 100;
-  font-style: italic;
 }
 
 h1 {
@@ -62,37 +64,15 @@ footer {
   color: rgba(247, 202, 201, 0.9);
 }
 
-.carousel {
-  min-height: 750px;
-  max-height: 750px;
-}
-
-.carousel .indicators {
-  position: relative;
-}
-
-.carousel .carousel-item img {
-  object-fit: cover;
-  height: 750px;
-  width: 100%;
-}
-
-.modal {
-  background-color: rgba(247, 233, 232, 1);
-}
-
-.modal .modal-footer {
-  background-color: rgba(247, 233, 232, 1);
-}
-
-.modal .modal-footer > a {
-  margin-right: 10px !important;
-}
-
 .overlay {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, .5);
+}
+
+.thumb {
+  border-radius: 50%;
+  max-width: 50%;
 }
 
 #preloader {
@@ -122,6 +102,10 @@ footer {
   letter-spacing: 1rem;
 }
 
+#quote {
+  min-height: 20%;
+}
+
 #venue {
   height: 50%;
 }
@@ -131,6 +115,10 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -147,17 +135,16 @@ footer {
     padding-top: 1rem;
   }
 
-  .carousel {
-    min-height: 400px;
-    max-height: 400px;
-  }
-
-  .carousel .carousel-item img {
-    height: 400px;
+  .thumb {
+    max-width: 100%;
   }
 }
 
 @media only screen and (max-width: 360px) {
+  body {
+    font-size: .75rem;
+  }
+
   h1 {
     font-size: 1.4rem;
     letter-spacing: 0.5rem;
@@ -175,13 +162,7 @@ footer {
     letter-spacing: 0.5rem;
   }
 
-  .carousel {
-    min-height: 200px;
-    max-height: 200px;
-  }
-
-  .carousel .indicators .indicator-item {
-    height: 6px;
-    width: 6px;
+  .thumb {
+    max-width: 100%;
   }
 }
