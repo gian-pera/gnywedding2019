@@ -30,20 +30,14 @@ h3 {
 
 hr {
   border-color: rgba(247, 202, 201, 0.5);
+  margin-left: 35%;
+  width: 30%;
 }
 
 section {
+  height: auto;
   position: relative;
   max-width: 100%;
-  height: auto;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.25);
-  z-index: 95;
 }
 
 .section {
@@ -62,6 +56,11 @@ footer {
 
 .font-pink {
   color: rgba(247, 202, 201, 0.9);
+}
+
+.bold {
+  font-family: 'lato', sans-serif;
+  font-weight: bold;
 }
 
 .overlay {
@@ -89,32 +88,39 @@ footer {
 }
 
 #header {
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
   background-image: url('../static/header.jpg');
   background-attachment: fixed;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   color: rgba(255, 255, 255, 0.9);
-  height: 50%;
+  height: 100%;
   letter-spacing: 1rem;
+}
+
+#header .section {
+  padding-top: 30%;
 }
 
 #quote {
   min-height: 30%;
+  padding-top: 5rem;
 }
 
 #venue {
-  height: 50%;
+  min-height: 50%;
+  padding-top: 20rem;
 }
 
-#footer {
-  min-height: 5rem;
+#registry {
+  min-height: 50%;
+  padding-top: 20rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   body {
     font-size: 1rem;
   }
@@ -131,16 +137,12 @@ footer {
     font-size: 1.25rem;
   }
 
-  section .section {
-    padding-top: 1rem;
-  }
-
   .thumb {
     max-width: 100%;
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 450px) {
   body {
     font-size: .75rem;
   }
@@ -160,6 +162,10 @@ footer {
 
   #header {
     letter-spacing: 0.5rem;
+  }
+
+  #header .section {
+    padding-top: 50%;
   }
 
   .thumb {
