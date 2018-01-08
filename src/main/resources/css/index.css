@@ -36,9 +36,14 @@ h3 {
   font-size: 2rem;
 }
 
+h3 hr {
+  border-color: rgba(0, 0, 0, .85);
+  margin-top: 0.5rem;
+  width: 35%;
+}
+
 hr {
-  border-color: rgba(247, 202, 201, 0.5);
-  margin-bottom: 2.5rem;
+  border-color: rgba(247, 202, 201, 0.25);
   margin-left: auto;
   margin-right: auto;
   margin-top: 2.5rem;
@@ -61,11 +66,8 @@ hr {
   color: rgba(247, 202, 201, 0.9);
 }
 
-.heading {
-  font-family: 'lato', sans-serif;
+.bold {
   font-weight: bold;
-  padding-bottom: 2.5rem;
-  text-align: center;
 }
 
 .overlay {
@@ -75,7 +77,6 @@ hr {
 }
 
 .thumb {
-  border-radius: 50%;
   max-width: 50%;
 }
 
@@ -125,15 +126,6 @@ hr {
   padding-left: 1rem;
 }
 
-#venue {
-  padding-top: 30%;
-}
-
-#registry {
-  min-height: 50%;
-  padding-top: 10rem;
-}
-
 @media only screen and (max-width: 900px) {
   body {
     font-size: 1.25rem;
@@ -151,6 +143,11 @@ hr {
     font-size: 1.75rem;
   }
 
+  #venue img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
   .thumb {
     max-width: 100%;
   }
@@ -162,20 +159,20 @@ hr {
 
 @media only screen and (max-width: 450px) {
   body {
-    font-size: .75rem;
+    font-size: 1rem;
   }
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.75rem;
     letter-spacing: 0.5rem;
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   h3 {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
 
   #header {
