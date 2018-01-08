@@ -1,53 +1,56 @@
 body {
+  background-color: rgba(76, 78, 81, 1);
   font-family: 'Raleway', sans-serif;
   font-style: italic;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.25rem;
   overflow: hidden;
   overflow-y: scroll;
-  background-color: rgba(247, 233, 232, 0.9);
+
+}
+
+main {
+  background: rgba(248, 235, 234, 1);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1680px;
 }
 
 h1, h2, h3 {
-  font-weight: 100;
+  font-weight: 200;
 }
 
 h1 {
-  font-family: 'lato', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   font-size: 3rem;
   letter-spacing: 1rem;
 }
 
 h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 2.5rem;
 }
 
 h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 2rem;
 }
 
 hr {
   border-color: rgba(247, 202, 201, 0.5);
-  margin-left: 35%;
-  width: 30%;
-}
-
-section {
-  height: auto;
-  position: relative;
-  max-width: 100%;
-}
-
-.section {
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  width: 60%;
 }
 
 .blue {
-  background: rgba(19, 41, 75, 1) !important;
-  color: rgba(255, 255, 255, 0.9);
+  background: rgba(145, 168, 208, 1) !important;
+}
+
+.pink {
+  background: rgba(248, 235, 234, 1) !important;
 }
 
 .font-blue {
@@ -58,9 +61,11 @@ section {
   color: rgba(247, 202, 201, 0.9);
 }
 
-.bold {
+.heading {
   font-family: 'lato', sans-serif;
   font-weight: bold;
+  padding-bottom: 2.5rem;
+  text-align: center;
 }
 
 .overlay {
@@ -87,11 +92,17 @@ section {
   background-color: rgba(248, 235, 234, 1);
 }
 
+#details {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
 #header {
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  background-image: url('../static/header.jpg');
+  background-image: url('../static/header-min.jpg');
   background-attachment: fixed;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -105,40 +116,47 @@ section {
   padding-top: 20%;
 }
 
-#quote {
-  min-height: 30%;
-  padding-top: 5rem;
+#quote .row {
+  max-width: 90%;
+  padding-top: 2rem;
+}
+
+#quote .left {
+  padding-left: 1rem;
 }
 
 #venue {
-  min-height: 50%;
-  padding-top: 20rem;
+  padding-top: 30%;
 }
 
 #registry {
   min-height: 50%;
-  padding-top: 20rem;
+  padding-top: 10rem;
 }
 
 @media only screen and (max-width: 900px) {
   body {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
   }
 
   .thumb {
     max-width: 100%;
+  }
+
+  .row .col {
+    padding: 0;
   }
 }
 

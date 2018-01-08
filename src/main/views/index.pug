@@ -3,13 +3,13 @@ html(lang = 'en')
     meta(name = 'og:title', content = 'Gian &amp; Yssa&#039;s Wedding')
     meta(name = 'og:site_name', content = 'Gian &amp; Yssa&#039;s Wedding')
     meta(name = 'og:url', content = 'https://gnywedding2019.herokuapp.com')
-    meta(name = 'og:image', content = 'https://gnywedding2019.herokuapp.com/static/og.jpg')
+    meta(name = 'og:image', content = 'https://gnywedding2019.herokuapp.com/static/og-min.jpg')
     meta(http-equiv = 'Content-Type', content = 'text/html; charset=UTF-8')
     meta(name = 'viewport', content = 'width=device-width, initial-scale=1')
 
     title Gian &amp; Yssa's Wedding
-
-    link(type = 'text/css', rel = 'stylesheet', href='https://fonts.googleapis.com/css?family=Lato|Raleway')
+    
+    link(type = 'text/css', rel = 'stylesheet', href='https://fonts.googleapis.com/css?family=Merriweather|Raleway')
     link(type = 'text/css', rel = 'stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
     link(type = 'text/css', rel = 'stylesheet', href = 'css/materialize.min.css')
     link(type = 'text/css', rel = 'stylesheet', href = 'css/index.css')
@@ -19,7 +19,7 @@ html(lang = 'en')
     script(type = 'text/javascript', src = 'js/index.js')
 
   body
-    img.hide(src='static/og.jpg')
+    img.hide(src='static/og-min.jpg')
 
     #preloader
       .preloader-wrapper.big.active
@@ -31,47 +31,53 @@ html(lang = 'en')
           .circle-clipper.right
             .circle
 
-    #main.hide
+    main.hide
       section#header
         .overlay
           .container
             .section.center
               h1 GIAN &amp; YSSA
               h3 are getting married
+              
+      section#details
+        #quote
+          .row.valign-wrapper
+            .col.s3.center
+              img.z-depth-5.thumb(src='static/thumb-min.jpg')
+            .col.s9.left Sometimes, greatest thing in everyone's journey is not where you're going but who you're with and it is of great honor for us to invite you to one of our special journeys together.
 
-      section#quote.section
-        .row.valign-wrapper
-          .col.s3.center
-            img.z-depth-5.thumb(src='static/thumb.jpg')
-          .col.s9.left Sometimes, greatest thing in everyone's journey is not where you're going but who you're with and it is of great honor for us to invite you to one of our special journeys together.
-
-
-      section#venue
-        .center.bold SAVE THE DATE
-        hr
-        .section
-          h2.center 11th of January, 2019
-          h2.center Mithi Resort, Dauis, Bohol
-
-      section#registry.center
-        .center.bold REGISTRY
-        hr
-        .section
+        hr.hide-on-large-only
+        
+        #venue.section
           .row
-            .col.s10.offset-s1
-              p.center We would prefer your presence, not your presents. But if you would like to give us gifts, then we'd highly appreciate monetary contributions to help us prepare for the future.
-          .row
-            .col.s10.offset-s1
-              p.center You may come in your formal beach attire.
-          .row
-            .col.s10.offset-s1.center.hide-on-small-only
-                i.large.material-icons.font-blue flight
-                i.large.material-icons.font-pink wb_sunny
-                i.large.material-icons.font-blue map
-                i.large.material-icons.font-pink wc
-            .col.s10.offset-s1.center.hide-on-med-and-up
-                i.large.material-icons.font-blue flight
-                i.large.material-icons.font-pink wb_sunny
-            .col.s10.offset-s1.center.hide-on-med-and-up
-                i.large.material-icons.font-pink map
-                i.large.material-icons.font-blue wc
+            .col.s8.offset-s1.m6.offset-m2
+              h2 Mithi Resort, Dauis, Bohol
+                br
+                | 11th of January, 2019
+            .col.s12.center
+              img.z-depth-5(src='static/mithi-min.jpg')
+            .col.s12.m8.offset-m2
+              .container
+                p Sometimes, greatest thing in everyone's journey is not where you're going but who you're with and it is of great honor for us to invite you to one of our special journeys together.
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et pellentesque tortor. Mauris sit amet dui nulla. Aenean commodo aliquet porttitor.
+            
+        #registry.center
+          .section
+            .row
+              .col.s10.offset-s1
+                p.center We would prefer your presence, not your presents. But if you would like to give us gifts, then we'd highly appreciate monetary contributions to help us prepare for the future.
+            .row
+              .col.s10.offset-s1
+                p.center You may come in your formal beach attire.
+            .row
+              .col.s10.offset-s1.center.hide-on-small-only
+                  i.large.material-icons.font-blue flight
+                  i.large.material-icons.font-pink wb_sunny
+                  i.large.material-icons.font-blue map
+                  i.large.material-icons.font-pink wc
+              .col.s10.offset-s1.center.hide-on-med-and-up
+                  i.large.material-icons.font-blue flight
+                  i.large.material-icons.font-pink wb_sunny
+              .col.s10.offset-s1.center.hide-on-med-and-up
+                  i.large.material-icons.font-pink map
+                  i.large.material-icons.font-blue wc
