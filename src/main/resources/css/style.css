@@ -278,7 +278,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-#qbootstrap-couple,
+#qbootstrap-couple {
+  padding: 2em 0;
+}
+
 #qbootstrap-countdown,
 #qbootstrap-groom-bride,
 #qbootstrap-story,
@@ -289,7 +292,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 7em 0;
 }
 @media screen and (max-width: 480px) {
-  #qbootstrap-couple,
   #qbootstrap-countdown,
   #qbootstrap-groom-bride,
   #qbootstrap-story,
@@ -759,6 +761,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #FF847C;
   font-size: 40px;
   margin-bottom: 30px;
+}
+
+.couple .desc h3 {
+  color: #FF847C;
 }
 
 .timeline {
