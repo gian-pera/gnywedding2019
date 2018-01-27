@@ -278,12 +278,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-#qbootstrap-couple {
-  padding: 2em 0;
-}
-
 #qbootstrap-countdown,
-#qbootstrap-groom-bride,
+#qbootstrap-couple,
 #qbootstrap-story,
 #qbootstrap-entourage,
 #qbootstrap-venue,
@@ -293,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 480px) {
   #qbootstrap-countdown,
-  #qbootstrap-groom-bride,
+  #qbootstrap-couple,
   #qbootstrap-story,
   #qbootstrap-entourage,
   #qbootstrap-venue,
@@ -649,41 +645,41 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
 }
 
-#qbootstrap-countdown {
+#qbootstrap-venue {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
   z-index: 0;
   width: 100%;
 }
-#qbootstrap-countdown .section-heading {
+#qbootstrap-venue .section-heading {
   margin-bottom: 0 !important;
 }
-#qbootstrap-countdown .section-heading h2 {
+#qbootstrap-venue .section-heading h2 {
   color: #fff;
 }
-#qbootstrap-countdown .section-heading .datewed {
-  font-size: 30px;
+#qbootstrap-venue .section-heading p {
+  color: #fff;
+}
+#qbootstrap-venue .section-heading .venuewed {
+  font-size: 38px;
   font-family: "Clicker Script", cursive;
   color: #fff;
 }
 @media screen and (max-width: 768px) {
-  #qbootstrap-countdown .section-heading h2 {
-    font-size: 30px;
-  }
-  #qbootstrap-countdown .section-heading .datewed {
+  #qbootstrap-venue .section-heading .venuewed {
     font-size: 24px;
   }
 }
-#qbootstrap-countdown .section-heading.svg-sm .svg {
+#qbootstrap-venue .section-heading.svg-sm .svg {
   height: 180px;
   margin-bottom: -50px;
   padding: 0;
 }
-#qbootstrap-countdown .section-heading.colored .svg {
+#qbootstrap-venue .section-heading.colored .svg {
   fill: #fff;
 }
-#qbootstrap-countdown .overlay {
+#qbootstrap-venue .overlay {
   position: absolute !important;
   width: 100%;
   top: 0;
@@ -693,10 +689,23 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
   background: rgba(0, 0, 0, 0.4);
 }
+#qbootstrap-venue .display-over {
+  z-index: 2;
+}
+
+#qbootstrap-countdown .section-heading .datewed {
+  font-size: 38px;
+  font-family: "Clicker Script", cursive;
+  color: #FF847C;
+}
+@media screen and (max-width: 768px) {
+  #qbootstrap-countdown .section-heading .datewed {
+    font-size: 24px;
+  }
+}
 #qbootstrap-countdown .countdown {
   margin-bottom: 0;
   font-size: 80px;
-  color: #fff;
 }
 #qbootstrap-countdown .countdown span {
   margin: 0 30px;
@@ -709,9 +718,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", Arial, sans-serif;
   letter-spacing: 10px;
   text-transform: uppercase;
-}
-#qbootstrap-countdown .display-over {
-  z-index: 2;
 }
 
 .couple {

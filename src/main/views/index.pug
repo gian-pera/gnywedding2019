@@ -47,17 +47,20 @@ html.no-js
                 a(href="#" data-nav-section="home")
                   span Home
               li
-                a(href="#" data-nav-section="groom-bride")
-                  span Celebrants
+                a(href="#" data-nav-section="couple")
+                  span Couple
+              li
+                a(href="#" data-nav-section="venue")
+                  span Venue
+              li
+                a(href="#" data-nav-section="date")
+                  span Countdown
               li
                 a(href="#" data-nav-section="greetings")
-                  span Greetings
+                  span Testimonials
               li
                 a(href="#" data-nav-section="entourage")
                   span Entourage
-              li
-                a(href="#" data-nav-section="venue")
-                  span Schedule
               li
                 a(href="#" data-nav-section="rsvp")
                   span RSVP
@@ -77,47 +80,7 @@ html.no-js
                     | 2019.01.11
     #qbootstrap-couple.qbootstrap-section-gray
       .container
-        .row.animate-box
-          .col-md-8.col-md-offset-2.animate-box
-            .col-md-12.text-center.section-heading.svg-sm.colored
-              img.svg(src="static/flaticon/svg/005-two.svg")
-              h2 Fall for Bohol
-              p As a young couple, we always find ourselves in love and involved with each other. Through the years, we travelled to various places and got to know more of ourselves each day.
-              p Fall in love with Bohol as we celebrate the most important milestone of our 9 year relationship.
-        //.row.animate-box
-          .col-md-8.col-md-offset-2.text-center
-            .col-md-5.col-sm-5.col-xs-5.nopadding
-              //img.img-responsive(src="images/groom.jpg")
-              h3 Gian
-              h4 Giancarlo Niccolo P. Pera
-              span Groom
-            .col-md-2.col-sm-2.col-xs-2.nopadding
-              h2.amp-center
-                img.svg.img-responsive(src="static/flaticon/svg/003-luxury.svg")
-            .col-md-5.col-sm-5.col-xs-5.nopadding
-              //img.img-responsive(src="images/bride.jpg")
-              h3 Yssa
-              h4 Alyssa A. Denaya
-              span Bride
-    #qbootstrap-countdown(data-stellar-background-ratio="0.5" style="background-image: url(static/og-min.jpg);" data-section="wedding-day")
-      .overlay
-      .display-over
-        .container
-          .row.animate-box
-            .col-md-12.section-heading.text-center.svg-sm.colored
-              img.svg(src="static/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg")
-              h2 The Wedding Day
-              span.datewed Friday, 11th of January, 2019
-          .row.animate-box
-            .col-md-10.col-md-offset-1.text-center
-              p.countdown
-                span#days
-                span#hours
-                span#minutes
-                span#seconds
-    #qbootstrap-groom-bride(data-section="groom-bride")
-      .container
-        .row.animate-box
+        .row.animate-box(data-section="couple")
           .col-md-8.col-md-offset-2
             .col-md-12.text-center.section-heading.svg-sm-2.colored
               img.svg(src="static/flaticon/svg/002-wedding-couple.svg")
@@ -149,10 +112,38 @@ html.no-js
                   li
                     a(href="https://www.instagram.com/isangyssa" target="_blank")
                       i.icon-instagram
-    #qbootstrap-testimonials.qbootstrap-greetings(data-section="greetings" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);")
+    #qbootstrap-venue(data-stellar-background-ratio="0.5" style="background-image: url(static/og-min.jpg);")
+      .overlay
+      .display-over
+      .container
+        .row.animate-box(data-section="venue")
+          .col-md-8.col-md-offset-2.animate-box
+            .col-md-12.text-center.section-heading.svg-sm.colored
+              img.svg(src="static/flaticon/svg/005-two.svg")
+              h2 Fall for Bohol
+              p
+                span.venuewed Dream Islet, Mithi Resort &amp; Spa
+              p As a young couple, we always find ourselves in love and involved with each other. Through the years, we travelled to various places and got to know more of ourselves each day.
+              p Fall in love with Bohol as we celebrate the most important milestone of our 9 year relationship.
+              a.btn.btn-primary.btn-sm(href="http://www.mithiresort.com", target="_blank") Learn More             
+    #qbootstrap-countdown
+        .container
+          .row.animate-box(data-section="date")
+            .col-md-12.section-heading.text-center.svg-sm.colored
+              img.svg(src="static/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg")
+              h2 The Wedding Day
+              span.datewed Friday, 11th of January, 2019, 4:00 PM 
+          .row.animate-box
+            .col-md-10.col-md-offset-1.text-center
+              p.countdown
+                span#days
+                span#hours
+                span#minutes
+                span#seconds
+    #qbootstrap-testimonials.qbootstrap-greetings(data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);")
       .overlay
       .container
-        .row.animate-box
+        .row.animate-box(data-section="greetings")
           .col-md-12.section-heading.text-center.svg-sm.colored
             img.svg(src="static/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg")
             h2 Sweet Messages
@@ -184,9 +175,9 @@ html.no-js
                 p
                   | “Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”
               p.author John Doe
-    #qbootstrap-entourage(data-section="entourage")
+    #qbootstrap-entourage
       .container
-        .row.animate-box
+        .row.animate-box(data-section="entourage")
           .col-md-8.col-md-offset-2
             .col-md-12.text-center.section-heading.svg-sm.colored
               img.svg(src="static/flaticon/svg/005-two.svg")
@@ -230,52 +221,21 @@ html.no-js
             .groom-men
               img.img-responsive(src="static/bm-filler.jpg")
               h3 Nivea Nera
-    #qbootstrap-venue(data-section="venue")
-      .container
-        .row.animate-box
-          .col-md-8.col-md-offset-2
-            .col-md-12.text-center.section-heading.svg-sm.colored
-              img.svg(src="static/flaticon/svg/005-two.svg")
-              h2 Schedule
-        .row.row-bottom-padded-md
-          .col-md-10.col-md-offset-1.text-center.animate-box
-            .wedding-events
-              .ceremony-bg(style="background-image: url(static/venue-min.jpg);")
-              .desc
-                h3 Wedding Ceremony
-                .row
-                  .col-md-2.col-md-push-5
-                    .icon-tip
-                      span.icon
-                        i.icon-heart-o
-                  .col-md-5.col-md-pull-1
-                    .date
-                      i.icon-calendar
-                      span Friday
-                      span 11th of January, 2019
-                  .col-md-5.col-md-pull-1
-                    .date
-                      i.icon-clock2
-                      span 04:00 PM
-                      span 08:00 PM
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis massa ut vehicula eleifend. Mauris ac neque ante. In euismod ultrices elit, vel rhoncus est varius quis. Mauris ornare dignissim nunc ut varius. Vivamus luctus orci arcu, posuere mollis dolor pretium ut. Integer consectetur lorem at tempor imperdiet. Curabitur interdum semper ligula quis lacinia.
-                p
-                  a.btn.btn-primary.btn-sm(href="http://www.mithiresort.com", target="_blank") Learn more
         .row
           .col-md-12
             #map.qbootstrap-map
-    #qbootstrap-started.qbootstrap-bg(data-section="rsvp" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);")
+    #qbootstrap-started.qbootstrap-bg(data-stellar-background-ratio="0.5" style="background-image: url(static/header-min.jpg);")
       .overlay
+      .display-over
       .container
-        .row.animate-box
-          .col-md-8.col-md-offset-2
+        .row.animate-box(data-section="rsvp")
+          .col-md-10.col-md-offset-1
             .col-md-12.text-center.section-heading.svg-sm.colored
               img.svg(src="static/flaticon/svg/005-two.svg")
               h2 You Are Invited
               .row
                 .col-md-10.col-md-offset-1.subtext
-                  h3
-                    | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                  h3 We are cordially inviting you to join us on the start of our next adventure together.
         .row.animate-box
           .col-md-10.col-md-offset-1
             form.form-inline
