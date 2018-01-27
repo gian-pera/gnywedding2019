@@ -1126,7 +1126,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 768px) {
   .groom-men img {
-    width: 300px;
+    width: 200px;
     margin: 0 auto;
   }
 }
