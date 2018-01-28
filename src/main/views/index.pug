@@ -32,8 +32,7 @@ html.no-js
     
     script(src="js/modernizr-2.6.2.min.js")
       
-    script(src="https://www.google.com/recaptcha/api.js")
-      
+    script(src="https://www.google.com/recaptcha/api.js", async, defer)
   body
     img.hide(src="static/og-min.jpg")
     header#qbootstrap-header(role="banner")
@@ -106,7 +105,7 @@ html.no-js
               img.img-responsive(src="static/thumb-min.jpg")
               .desc
                 h2 Alyssa A. Denaya
-                p My life couldn't have been this colorful without Yssa and I could never imagine life without her. She was always the adventurous type and ever since college, she never wanted to have a dull moment. From joining her school's theater club to immersing herself with the indiginous people in northern luzon, she was always hungry to discover what the world has to offer. 9 years of being dragged by her adventures, I'm very grateful to have experienced this journey with her and I'm truly honored to be her future husband.
+                p My life couldn't have been this colorful without Yssa and I could never imagine life without her. She's always the adventurous type and ever since college, she never wanted to have a dull moment. From joining her school's theater club to immersing herself with the indiginous people in northern luzon, she's always hungry to discover what the world has to offer. 9 years of being dragged by her adventures, I'm very grateful to have experienced this journey with her and I'm truly honored to be her future husband.
                 ul.social.social-circle
                   li
                     a(href="https://www.facebook.com/IsangYssa" target="_blank")
@@ -126,7 +125,7 @@ html.no-js
               p
                 span.venuewed Dream Islet, Mithi Resort &amp; Spa
               p As a young couple, we always find ourselves in love and involved with each other. Through the years, we travelled to various places and got to know more of ourselves each day.
-              p Fall in love with Bohol as we celebrate the most important milestone of our 9 year relationship.
+              p It was in Bohol, that we felt tranquility and made us appreciate nature and ourselves to the fullest. Fall in love with Bohol, as we did, while we celebrate the most important milestone of our 9 year relationship.
               a.btn.btn-primary.btn-sm(href="http://www.mithiresort.com", target="_blank") Learn More             
     #qbootstrap-countdown
         .container
@@ -238,22 +237,20 @@ html.no-js
                 .col-md-10.col-md-offset-1.subtext
                   h3 We are cordially inviting you to join us on the start of our next adventure together.
         form.form-inline
+          .hide(data-sitekey="6LfB3UIUAAAAAG-NfP0GVyuIoeyZVRntxLfQnw1O", data-callback="onSubmit", data-size="invisible")
           .row.animate-box
             .col-md-10.col-md-offset-1  
               .row
-                .col-md-5.col-sm-5
+                .col-md-4.col-sm-4
                   .form-group
                     label.sr-only(for="name") Name
                     input#name.form-control(type="name" placeholder="Name")
-                .col-md-5.col-sm-5
+                .col-md-4.col-sm-4
                   .form-group
                     label.sr-only(for="email") Email
                     input#email.form-control(type="email" placeholder="Email")
-              .row
-                .col-md-5.col-sm-5
-                  .form-group.g-recaptcha(data-sitekey="6LfB3UIUAAAAAG-NfP0GVyuIoeyZVRntxLfQnw1O")
-                .col-md-5.col-sm-5
-                  button.btn.btn-default.btn-block(type="submit") I am Attending
+                .col-md-4.col-sm-4
+                  button#submit.btn.btn-default.btn-block I am Attending
                   
     script(src="js/jquery.min.js")
     script(src="js/jquery.easing.1.3.js")
