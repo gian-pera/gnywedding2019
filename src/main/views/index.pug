@@ -1,9 +1,9 @@
 html.no-js
   head
-    meta(http-equiv = 'Content-Type', content = 'text/html; charset=UTF-8')
+    meta(http-equiv = 'Content-Type', content = 'text/html, charset=UTF-8')
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    meta(name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0")
     meta(name="description" content="Wedding website for Gian and Yssa")
     meta(name="keywords" content="wedding gnywedding2019")
     meta(name = 'og:title', content = 'Gian &amp; Yssa&#039;s Wedding')
@@ -32,7 +32,7 @@ html.no-js
     
     script(src="js/modernizr-2.6.2.min.js")
       
-    script(src="https://www.google.com/recaptcha/api.js", async, defer)
+    script(src="https://www.google.com/recaptcha/api.js?render=explicit&onload=loadRecaptcha" async defer)
   body
     img.hide(src="static/og-min.jpg")
     header#qbootstrap-header(role="banner")
@@ -204,11 +204,11 @@ html.no-js
           .col-md-8.col-md-offset-2
             .col-md-12.text-center.section-heading.svg-sm.colored
               img.svg(src="static/flaticon/svg/005-two.svg")
-              h2 The Bridesmaid
+              h2 The Bridesmaids
         .row
           .col-md-3.text-center.animate-box
             .groom-men
-              img.img-responsive(src="static/bm-filler.jpg")
+              img.img-responsive(src="static/lea-min.jpg")
               h3 Lea Adriano
           .col-md-3.text-center.animate-box
             .groom-men
@@ -237,7 +237,6 @@ html.no-js
                 .col-md-10.col-md-offset-1.subtext
                   h3 We are cordially inviting you to join us on the start of our next adventure together.
         form.form-inline
-          .hide(data-sitekey="6LfB3UIUAAAAAG-NfP0GVyuIoeyZVRntxLfQnw1O", data-callback="onSubmit", data-size="invisible")
           .row.animate-box
             .col-md-10.col-md-offset-1  
               .row
@@ -250,7 +249,10 @@ html.no-js
                     label.sr-only(for="email") Email
                     input#email.form-control(type="email" placeholder="Email")
                 .col-md-4.col-sm-4
-                  button#submit.btn.btn-default.btn-block I am Attending
+                  button#submit.btn.btn-default.btn-block(type="button" data-loading-text="Processing...") I am Attending
+                  #captcha
+              .row
+                .col
                   
     script(src="js/jquery.min.js")
     script(src="js/jquery.easing.1.3.js")

@@ -15,9 +15,6 @@ app.set('views', `${__dirname}/views`)
 app.set('view engine', 'pug')
 
 app.use('/', express.static(`${__dirname}/resources`))
-//app.use('/', express.static('node_modules/font-awesome'))
-//app.use('/', express.static('node_modules/materialize-css/dist'))
-//app.use('/js', express.static('node_modules/jquery/dist'))
 
 app.use(bodyParser.urlencoded({
   extended: true
