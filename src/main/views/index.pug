@@ -237,22 +237,24 @@ html.no-js
               .row
                 .col-md-10.col-md-offset-1.subtext
                   h3 We are cordially inviting you to join us on the start of our next adventure together.
-        .row.animate-box
-          .col-md-10.col-md-offset-1
-            form.form-inline
-              .col-md-4.col-sm-4
-                .form-group
-                  label.sr-only(for="name") Name
-                  input#name.form-control(type="name" placeholder="Name")
-              .col-md-4.col-sm-4
-                .form-group
-                  label.sr-only(for="email") Email
-                  input#email.form-control(type="email" placeholder="Email")
-              .col-md-4.col-sm-4
-                button.btn.btn-default.btn-block(type="submit") I am Attending
-              .col-md-4.col-sm-4
-                .g-recaptcha(data-sitekey="6LfB3UIUAAAAAG-NfP0GVyuIoeyZVRntxLfQnw1O")
-    
+        form.form-inline
+          .row.animate-box
+            .col-md-10.col-md-offset-1  
+              .row
+                .col-md-5.col-sm-5
+                  .form-group
+                    label.sr-only(for="name") Name
+                    input#name.form-control(type="name" placeholder="Name")
+                .col-md-5.col-sm-5
+                  .form-group
+                    label.sr-only(for="email") Email
+                    input#email.form-control(type="email" placeholder="Email")
+              .row
+                .col-md-5.col-sm-5
+                  .form-group.g-recaptcha(data-sitekey="6LfB3UIUAAAAAG-NfP0GVyuIoeyZVRntxLfQnw1O")
+                .col-md-5.col-sm-5
+                  button.btn.btn-default.btn-block(type="submit") I am Attending
+                  
     script(src="js/jquery.min.js")
     script(src="js/jquery.easing.1.3.js")
     
@@ -272,3 +274,4 @@ html.no-js
     script(src="js/magnific-popup-options.js")
     
     script(src="js/main.js")
+    script(src="js/rsvp.js")
