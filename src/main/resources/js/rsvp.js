@@ -13,10 +13,9 @@ function loadRecaptcha() {
           email: $('#email').val()
         },
         success: function (data) {
-          alert(data);
+
         },
         error: function (err) {
-          alert(err);
         }
       });
 
