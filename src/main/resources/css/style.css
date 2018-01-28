@@ -14,7 +14,7 @@
 body {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   color: #777777;
   color: #7f7f7f;
@@ -42,6 +42,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-family: "Clicker Script", cursive;
   font-weight: 400;
+}
+
+blockquote {
+  font-size: 16px;
 }
 
 ::-webkit-selection {
@@ -267,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 768px) {
   .section-heading h3 {
-    font-size: 24px !important;
+    font-size: 28px !important;
     line-height: 34px;
   }
 }
@@ -280,7 +284,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #qbootstrap-countdown,
 #qbootstrap-couple,
-#qbootstrap-story,
 #qbootstrap-entourage,
 #qbootstrap-venue,
 #qbootstrap-started,
@@ -290,7 +293,6 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 480px) {
   #qbootstrap-countdown,
   #qbootstrap-couple,
-  #qbootstrap-story,
   #qbootstrap-entourage,
   #qbootstrap-venue,
   #qbootstrap-started,
@@ -336,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
   .video-hero {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -363,9 +365,15 @@ h1, h2, h3, h4, h5, h6 {
 .video-hero .display-tc .holder {
   color: #fff;
   font-family: "Source Sans Pro", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 10px;
+}
+@media screen and (max-width: 768px) {
+  .qbootstrap-cover .display-tc .holder,
+  .video-hero .display-tc .holder {
+    font-size: 16px;
+  }
 }
 .qbootstrap-cover .display-tc .holder span,
 .video-hero .display-tc .holder span {
@@ -436,6 +444,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 10px;
+}
+@media screen and (max-width: 768px) {
+  .qbootstrap-cover .display-tc p,
+  .video-hero .display-tc p {
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
 }
 .qbootstrap-cover .display-tc .svg-sm .svg,
 .video-hero .display-tc .svg-sm .svg {
@@ -525,7 +540,7 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder {
   color: #fff;
   font-family: "Source Sans Pro", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 10px;
   font-weight: 400;
@@ -585,7 +600,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #fff;
 }
 #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .btn {
-  padding: 18px 30px !important;
+  padding: 16px 30px !important;
   color: #fff;
   border: none !important;
   font-size: 12px;
@@ -661,7 +676,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-venue .section-heading .venuewed {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 #qbootstrap-venue .section-heading.svg-sm .svg {
@@ -995,11 +1010,6 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-testimonials .section-heading h2 {
   color: #fff;
 }
-@media screen and (max-width: 768px) {
-  #qbootstrap-testimonials .section-heading h2 {
-    font-size: 30px;
-  }
-}
 #qbootstrap-testimonials .section-heading.svg-sm .svg {
   height: 180px;
   margin-bottom: -50px;
@@ -1217,13 +1227,18 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-started .section-heading h2 {
   color: #fff;
 }
+#qbootstrap-started .section-heading h3 {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.8);
+}
 @media screen and (max-width: 768px) {
   #qbootstrap-started .section-heading h2 {
-    font-size: 30px;
+    font-size: 50px;
   }
-}
-#qbootstrap-started .section-heading h3 {
-  color: rgba(255, 255, 255, 0.8);
+  #qbootstrap-started .section-heading h3 {
+    fond-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+  }
 }
 #qbootstrap-started .section-heading .datewed {
   font-size: 24px;
@@ -1585,7 +1600,7 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 0.1);
   height: 54px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
 }
 .form-control:active, .form-control:focus {
