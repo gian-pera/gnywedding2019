@@ -32,7 +32,7 @@ html.no-js
     
     script(src="js/modernizr-2.6.2.min.js")
       
-    script(src="https://www.google.com/recaptcha/api.js?render=explicit&onload=loadRecaptcha" async defer)
+    script(src="https://www.google.com/recaptcha/api.js?render=explicit&onload=loadRecaptcha")
   body
     img.hide(src="static/og-min.jpg")
     header#qbootstrap-header(role="banner")
@@ -71,7 +71,6 @@ html.no-js
         .display-t
           .display-tc
             .container
-              #captcha
               .col-md-10.col-md-offset-1
                 .animate-box.svg-sm.colored
                   h2 Gian &amp; Yssa
@@ -90,7 +89,7 @@ html.no-js
         .row
           .col-md-6
             .couple.groom.text-center.animate-box
-              img.img-responsive(src="static/thumb-min.jpg")
+              img.img-responsive(src="static/nic-min.jpg")
               .desc
                 h2 Giancarlo Niccolo P. Pera
                 p Nic is the perfect example of my dream guy and he never ceases to make me laugh through ups and downs. He accepts every little flaw I have and uplifts my spirit every time. It has been a nine-year roller coaster ride and I want to spend the rest of the ride holding his hands.
@@ -103,7 +102,7 @@ html.no-js
                       i.icon-instagram
           .col-md-6
             .couple.bride.text-center.animate-box
-              img.img-responsive(src="static/thumb-min.jpg")
+              img.img-responsive(src="static/yssa-min.jpg")
               .desc
                 h2 Alyssa A. Denaya
                 p My life couldn't have been this colorful without Yssa and I could never imagine life without her. She's always the adventurous type and ever since college, she never wanted to have a dull moment. From joining her school's theater club to immersing herself with the indiginous people in northern luzon, she's always hungry to discover what the world has to offer. 9 years of being dragged by her adventures, I'm very grateful to have experienced this journey with her and I'm truly honored to be her future husband.
@@ -217,17 +216,18 @@ html.no-js
               h3 Jessica Eleazar
           .col-md-3.text-center.animate-box
             .groom-men
-              img.img-responsive(src="static/bm-filler.jpg")
+              img.img-responsive(src="static/lui-min.jpg")
               h3 Luisa Ordoño
           .col-md-3.text-center.animate-box
             .groom-men
-              img.img-responsive(src="static/bm-filler.jpg")
+              img.img-responsive(src="static/nikka-min.jpg")
               h3 Nivea Nera
         .row
           .col-md-12
             #map.qbootstrap-map
     #qbootstrap-started.qbootstrap-bg(data-stellar-background-ratio="0.5" style="background-image: url(static/header-min.jpg);")
       .overlay
+      #captcha
       .container
         .row.animate-box(data-section="rsvp")
           .col-md-10.col-md-offset-1
