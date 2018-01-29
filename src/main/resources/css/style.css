@@ -1620,4 +1620,7 @@ blockquote {
   animation-fill-mode: both;
 }
 
+.grecaptcha-badge {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

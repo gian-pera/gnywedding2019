@@ -13,9 +13,7 @@ function loadRecaptcha() {
           email: $('#email').val()
         },
         success: function (data) {
-
-        },
-        error: function (err) {
+          
         }
       });
 
@@ -28,8 +26,6 @@ $(function () {
     $('#submit').on('click', function(e) {
       e.preventDefault();
       $(this).button('loading');
-      alert('captcha in');
       grecaptcha.execute();
-      alert('captcha out');
     });
 });
