@@ -28,9 +28,8 @@ $(function () {
     $('#submit').on('click', function(e) {
       e.preventDefault();
       $(this).button('loading');
-
+      alert('captcha in');
       grecaptcha.execute();
+      alert('captcha out');
     });
-
-
 });
