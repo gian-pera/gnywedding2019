@@ -13,10 +13,18 @@ function loadRecaptcha() {
           email: $('#email').val()
         },
         success: function (data) {
-          
+          if (data.success) {
+            alert('Thank you for attending, we\'re excited to see you on our wedding day\n-Gian & Yssa');
+          } else {
+            alert('Captcha request is invalid. Please submit your request again.');
+          }
+        },
+        error: function(err) {
+          alert(err.message);
         }
       });
 
+      grecaptcha.reset();
       $('#submit').button('reset');
     }
   });
