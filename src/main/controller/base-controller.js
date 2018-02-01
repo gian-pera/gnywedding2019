@@ -1,5 +1,6 @@
 'use strict'
 
+const rsvp = require('../model/rsvp')
 const captcha = require('../model/captcha')
 
 const _ = require('lodash')
@@ -13,6 +14,8 @@ exports.index = function (req, res) {
 
 exports.rsvp = function (req, res) {
   logger.info('base-controller.js: RSVP invoked.', JSON.stringify(req.body))
+
+  rsvp.validate(req.body)
 
   captcha.verify(req.body.captcha)
     .then(data => {

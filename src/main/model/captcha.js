@@ -1,7 +1,5 @@
 'use strict'
 
-const ApiError = require('../utils/api-error')
-
 const logger = require('winston')
 const request = require('request-promise')
 

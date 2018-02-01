@@ -10,7 +10,8 @@ function loadRecaptcha() {
         data: {
           captcha: response,
           name: $('#name').val(),
-          email: $('#email').val()
+          email: $('#email').val(),
+          phone: $('#phone').val()
         },
         success: function (data) {
           if (data.success) {
@@ -20,7 +21,7 @@ function loadRecaptcha() {
           }
         },
         error: function(err) {
-          alert(err.message);
+          alert(err.responseJSON.message);
         }
       });
 
