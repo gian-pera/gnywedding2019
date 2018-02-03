@@ -15,7 +15,7 @@ exports.send = async function(data) {
     to: ['gnywedding@gmail.com', 'ustgian25@gmail.com', 'alyssa.denaya@gmail.com'],
     subject: `Wedding RSVP Submitted - ${data.name}`,
     html: '<p>An RSVP has been submitted from https://gnywedding2019.herokuapp.com with the following details:</p>' +
-      '<ul>'
+      '<ul>' +
       `<li><b>Name:</b> ${data.name}</li>` +
       `<li><b>Email:</b> ${data.email}</li>` +
       `<li><b>Phone:</b> ${data.phone}</li>` +
