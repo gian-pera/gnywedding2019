@@ -12,7 +12,7 @@ exports.send = async function(data) {
   logger.info(`mailer.js: Email Requested for ${JSON.stringify(data)}`)
 
   await mailer({
-    to: 'ustgian25@gmail.com',
+    to: ['gnywedding@gmail.com', 'ustgian25@gmail.com'],
     subject: 'Wedding RSVP Submitted',
     html: '<p>RSVP Details:</p>' +
       `<p><b>Name:</b> ${data.name}` +
