@@ -16,7 +16,7 @@ exports.validate = function(data) {
   var email = _.trim(data.email)
   var phone = _.trim(data.phone)
 
-  if (_.isEmpty(name))) {
+  if (_.isEmpty(name)) {
     errors.push('Name must be specified')
   }
 
