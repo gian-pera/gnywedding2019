@@ -14,14 +14,13 @@ exports.validate = function(data) {
   var errors = [];
   var name = _.trim(data.name)
   var email = _.trim(data.email)
-  var phone = _.trim(data.phone)
 
   if (_.isEmpty(name)) {
     errors.push('Name must be specified')
   }
 
-  if (_.isEmpty(email) && _.isEmpty(phone)) {
-    errors.push('Email and/or phone # must be specified')
+  if (_.isEmpty(email)) {
+    errors.push('Email must be specified')
   }
 
   if (!_.isEmpty(errors)) {
