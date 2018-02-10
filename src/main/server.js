@@ -14,7 +14,7 @@ const app = express()
 app.set('views', `${__dirname}/views`)
 app.set('view engine', 'pug')
 
-app.use('/', express.static(`${__dirname}/resources`))
+app.use('/', express.static(`${__dirname}/public`))
 
 app.use(bodyParser.urlencoded({
   extended: true
