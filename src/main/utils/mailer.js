@@ -18,9 +18,7 @@ exports.send = async function(data) {
 
   await notifyAdmins(data)
 
-  //if (!_.isEmpty(data.email) {
-  //  notifyAttendee(data.email)
-  //}
+  await notifyAttendee(data)
 }
 
 async function notifyAdmins(data) {
@@ -44,4 +42,27 @@ async function notifyAdmins(data) {
   })
 
   logger.info(`mailer.js - Notified admins.`)
+}
+
+async function notifyAttendee(data) {
+
+  logger.info(`mailer.js - Notifying attendee...`)
+
+  var body = await _.template(fs.readFileSync(
+    `${__dirname}/../resources/email/rsvp.html`))(data)
+
+  logger.debug(`mailer.js - Email template for attendee generated:\n ${body}`)
+
+  await MAILER({
+    to: `${data.email}`,
+    subject: `RSVP Confirmation for Gian & Yssa's Wedding`,
+    html: `${body}`
+  }, function(err, res) {
+    logger.info(`mailer.js: ${JSON.stringify(res)}`)
+    if(!_.isNil(err)) {
+      logger.error(`mailer.js: ${JSON.stringify(err)}`)
+    }
+  })
+
+  logger.info(`mailer.js - Notified attendee.`)
 }
