@@ -11,7 +11,9 @@ function loadRecaptcha() {
           captcha: response,
           name: $('#name').val(),
           email: $('#email').val(),
-          phone: $('#phone').val()
+          phone: $('#phone').val(),
+          attendees: $('#attendees').val(),
+          relationship: $('#relationship').val()
         },
         success: function (data) {
           if (data.success) {

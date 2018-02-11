@@ -215,11 +215,19 @@ html.no-js
                   .col-md-6.col-sm-4
                     .form-group
                       label.sr-only(for="email") Email
-                      input#email.form-control(type="email" placeholder="Email")
+                      input#email.form-control(type="email" placeholder="Email Address")
+                  .col-md-6.col-sm-4
+                    .form-group
+                      label.sr-only(for="attendees") Headcount
+                      input#attendees.form-control(type="text" placeholder="No. of Attendees")
                   .col-md-6.col-sm-4
                     .form-group
                       label.sr-only(for="phone") Phone #
-                      input#phone.form-control(type="text" placeholder="Phone #")
+                      input#phone.form-control(type="text" placeholder="Mobile/Phone #")
+                  .col-md-6.col-sm-4
+                    .form-group
+                      label.sr-only(for="relationship") Relationship
+                      input#relationship.form-control(type="text" placeholder="Relationship to the Groom/Bride")
                   .col-md-6.col-sm-4
                     button#submit.btn.btn-default.btn-block(type="button" data-loading-text="Processing...") I am Attending
                   

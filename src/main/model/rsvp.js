@@ -12,15 +12,27 @@ exports.validate = function(data) {
   }
 
   var errors = [];
-  var name = _.trim(data.name)
-  var email = _.trim(data.email)
 
+  var name = _.trim(data.name)
   if (_.isEmpty(name)) {
-    errors.push('Name must be specified')
+    errors.push('Name must be specified.')
   }
 
+  var email = _.trim(data.email)
   if (_.isEmpty(email)) {
-    errors.push('Email must be specified')
+    errors.push('Email must be specified.')
+  }
+
+  var attendees = _.trim(data.attendees)
+  if (_.isEmpty(attendees)) {
+    errors.push('No. of attendees must be specified.')
+  } else {
+    attendees = _.toNumber(attendees)
+    if (_.isNaN(attendees)) {
+      errors.push('No of attendees must be a number')
+    } else if (attendees <= 0) {
+      errors.push('No of attendees must be at least 1')
+    }
   }
 
   if (!_.isEmpty(errors)) {
