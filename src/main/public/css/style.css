@@ -289,7 +289,7 @@ blockquote {
 #qbootstrap-entourage,
 #qbootstrap-venue,
 #qbootstrap-started,
-#qbootstrap-testimonials {
+#qbootstrap-registry {
   padding: 7em 0;
 }
 @media screen and (max-width: 480px) {
@@ -298,7 +298,7 @@ blockquote {
   #qbootstrap-entourage,
   #qbootstrap-venue,
   #qbootstrap-started,
-  #qbootstrap-testimonials {
+  #qbootstrap-registry {
     padding: 5em 0;
   }
 }
@@ -992,11 +992,11 @@ blockquote {
   background-repeat: no-repeat;
 }
 
-#qbootstrap-testimonials {
+#qbootstrap-registry {
   background: #FF847C;
   z-index: 0;
 }
-#qbootstrap-testimonials .overlay {
+#qbootstrap-registry .overlay {
   position: absolute !important;
   width: 100%;
   top: 0;
@@ -1006,32 +1006,35 @@ blockquote {
   z-index: -1;
   background: rgba(0, 0, 0, 0.4);
 }
-#qbootstrap-testimonials .section-heading {
+#qbootstrap-registry .section-heading {
   margin-bottom: 0 !important;
 }
-#qbootstrap-testimonials .section-heading h2 {
+#qbootstrap-registry .section-heading h2 {
   color: #fff;
 }
-#qbootstrap-testimonials .section-heading.svg-sm .svg {
+#qbootstrap-registry .section-heading p {
+  color: #fff;
+}
+#qbootstrap-registry .section-heading.svg-sm .svg {
   height: 180px;
   margin-bottom: -50px;
   padding: 0;
 }
-#qbootstrap-testimonials .section-heading.colored .svg {
+#qbootstrap-registry .section-heading.colored .svg {
   fill: #fff;
 }
-#qbootstrap-testimonials .box-testimony {
+#qbootstrap-registry .box-testimony {
   margin-bottom: 2em;
   float: left;
 }
-#qbootstrap-testimonials .box-testimony a {
+#qbootstrap-registry .box-testimony a {
   color: rgba(255, 255, 255, 0.5);
 }
-#qbootstrap-testimonials .box-testimony a:hover, #qbootstrap-testimonials .box-testimony a:focus, #qbootstrap-testimonials .box-testimony a:active {
+#qbootstrap-registry .box-testimony a:hover, #qbootstrap-registry .box-testimony a:focus, #qbootstrap-registry .box-testimony a:active {
   color: white;
   text-decoration: none;
 }
-#qbootstrap-testimonials .box-testimony blockquote {
+#qbootstrap-registry .box-testimony blockquote {
   padding-left: 0;
   border-left: none;
   padding: 40px;
@@ -1042,7 +1045,7 @@ blockquote {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-#qbootstrap-testimonials .box-testimony blockquote:after {
+#qbootstrap-registry .box-testimony blockquote:after {
   content: "";
   position: absolute;
   top: 100%;
@@ -1052,7 +1055,7 @@ blockquote {
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
 }
-#qbootstrap-testimonials .box-testimony blockquote .quote {
+#qbootstrap-registry .box-testimony blockquote .quote {
   position: absolute;
   top: 0;
   left: 10px;
@@ -1070,31 +1073,31 @@ blockquote {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-#qbootstrap-testimonials .box-testimony blockquote .quote > span {
+#qbootstrap-registry .box-testimony blockquote .quote > span {
   display: table-cell;
   vertical-align: middle;
 }
-#qbootstrap-testimonials .box-testimony blockquote p {
+#qbootstrap-registry .box-testimony blockquote p {
   font-style: italic;
 }
-#qbootstrap-testimonials .box-testimony .author {
+#qbootstrap-registry .box-testimony .author {
   line-height: 20px;
   color: white;
   font-size: 20px;
   margin-left: 20px;
 }
-#qbootstrap-testimonials .box-testimony .author .subtext {
+#qbootstrap-registry .box-testimony .author .subtext {
   display: block;
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
 }
-#qbootstrap-testimonials .testimony-slide {
+#qbootstrap-registry .testimony-slide {
   position: relative;
   color: #fff !important;
   width: 90%;
   margin: 0 auto;
 }
-#qbootstrap-testimonials .testimony-slide blockquote {
+#qbootstrap-registry .testimony-slide blockquote {
   border: none;
   position: relative;
   padding: 0;
@@ -1102,29 +1105,29 @@ blockquote {
   font-family: "Clicker Script", cursive;
   font-style: italic;
 }
-#qbootstrap-testimonials .arrow-thumb {
+#qbootstrap-registry .arrow-thumb {
   position: absolute;
   top: 40%;
   display: block;
   width: 100%;
 }
-#qbootstrap-testimonials .arrow-thumb a {
+#qbootstrap-registry .arrow-thumb a {
   font-size: 32px;
   color: #dadada;
 }
-#qbootstrap-testimonials .arrow-thumb a:hover, #qbootstrap-testimonials .arrow-thumb a:focus, #qbootstrap-testimonials .arrow-thumb a:active {
+#qbootstrap-registry .arrow-thumb a:hover, #qbootstrap-registry .arrow-thumb a:focus, #qbootstrap-registry .arrow-thumb a:active {
   text-decoration: none;
 }
-#qbootstrap-testimonials .owl-theme .owl-dots .owl-dot span {
+#qbootstrap-registry .owl-theme .owl-dots .owl-dot span {
   background: rgba(255, 255, 255, 0.3) !important;
 }
-#qbootstrap-testimonials .owl-theme .owl-dots .active span {
+#qbootstrap-registry .owl-theme .owl-dots .active span {
   background: white !important;
 }
-#qbootstrap-testimonials .qbootstrap-heading {
+#qbootstrap-registry .qbootstrap-heading {
   margin-bottom: 3em;
 }
-#qbootstrap-testimonials .qbootstrap-heading h2 {
+#qbootstrap-registry .qbootstrap-heading h2 {
   color: #fff;
   margin-bottom: 20px !important;
 }
