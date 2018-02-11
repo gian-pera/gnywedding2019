@@ -771,6 +771,20 @@ blockquote {
   text-transform: uppercase;
 }
 
+#qbootstrap-entourage .section-heading {
+  margin-bottom: 0;
+}
+#qbootstrap-entourage h3 {
+  font-size: 38px;
+  font-family: "Clicker Script", cursive;
+  color: #FF847C;
+}
+@media screen and (max-width: 768px) {
+  #qbootstrap-entourage h3 {
+    font-size: 28px;
+  }
+}
+
 .couple {
   border: 1px solid rgba(0, 0, 0, 0.05);
   padding: 40px;
