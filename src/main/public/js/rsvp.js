@@ -18,17 +18,20 @@ function loadRecaptcha() {
         success: function (data) {
           if (data.success) {
             alert('Thank you for confirming your attendance! We\'ll be sending an email to you shortly.\n\n"We\'re excited to see you on our wedding."\n-Gian & Yssa');
+            $('#submit').prop('disabled', true);
+            $('#submit').html('Thank you for attending!');
           } else {
+            $('#submit').button('reset');
             alert('Captcha request is invalid. Please submit your request again.');
           }
         },
         error: function(err) {
+          $('#submit').button('reset');
           alert(err.responseJSON.message);
         }
       });
 
       grecaptcha.reset();
-      $('#submit').button('reset');
     }
   });
 }
